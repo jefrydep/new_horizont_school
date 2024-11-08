@@ -4,7 +4,7 @@ import React from 'react'
 export default function InfrastructurePage() {
     return (
         <div>
-            <Hero title="NUESTRA INFRAESTRUCTURA" subtitle="Tenemos los mejores laboratorios "/>
+            <Hero title="Nuestra Infraestructura" subtitle="Tenemos los mejores laboratorios "/>
         </div>
     )
 }

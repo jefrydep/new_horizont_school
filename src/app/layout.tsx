@@ -32,8 +32,10 @@ export default function RootLayout({
       >
         <div className="bg-[#fbcc07] rounded-b-2xl h-12 w-full ">
           <div className="  container m-auto">
+            <div className="text-white">
 
-          ADMISION
+              ADMISION
+            </div>
           </div>
         </div>
         <div>
@@ -41,9 +43,12 @@ export default function RootLayout({
         </div>
         <main className="   ">
 
-        {children}
+          {children}
+          <div>
+            <img src="/icons/whatsapp.svg" alt="" className="fixed top-1/2 animate-bounce " />
+          </div>
         </main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

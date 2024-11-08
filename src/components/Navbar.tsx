@@ -41,20 +41,27 @@ const navMenu = [
 export default function Navbar() {
     const pathname = usePathname()
     return (
-        <div className="border-b sticky    py-2 px-4">
+        <div className="border-b sticky shadow   py-2 px-4">
             <nav className="container font-bold  flex justify-between items-center   m-auto">
-                <div>
-                    <div className="">
-                        LOGO
+                <div className="flex     items-center">
+                    <div className="  ">
+                        <img src="/logo.jpg" alt="" className="h-24" />
+                    </div>
+
+                    <div>
+                        <span>
+                            COLEGIO
+                        </span>
+                        <h2 className="text-title"> NUEVO HORIZONTE</h2>
                     </div>
                 </div>
-                <div className="flex gap-6 items-center  text-secondary ">
+                <div className="  gap-6 items-center hidden sm:flex  text-secondary  tracking-widest">
                     {
                         navMenu.map(item => (
 
 
-                            <Link className={`${item.path === pathname && "text-red-500"}`} key={item.id}  href={item.path}>
-                               {item.title}
+                            <Link className={`${item.path === pathname && "text-subtitle border-b-2"}`} key={item.id} href={item.path}>
+                                {item.title}
                             </Link>
 
                         ))
@@ -68,7 +75,7 @@ export default function Navbar() {
                     <Link href={"/academy"}>
                         Academia
                     </Link> */}
-                    <Button>
+                    <Button className="text-white">
                         SianNet
                     </Button>
                 </div>

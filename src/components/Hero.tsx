@@ -9,15 +9,15 @@ interface Props {
 export default function Hero({ title, subtitle, year }: Props) {
     return (
         <section className="container m-auto" >
-            <div className=" flex w-min px-2 py-2 rounded gap-4 mt-5 bg-purple-200">
+            <div className=" flex  w-full font-bold sm:w-min px-2 py-2 tracking-wider rounded gap-4 mt-5 bg-subtitle">
                 <span>Inicial</span>
                 <span>Primaria</span>
                 <span>secundaria</span>
             </div>
-            <div className="h-[85vh]   flex flex-col sm:flex-row justify-center items-center">
+            <div className="h-[80vh]   flex flex-col sm:flex-row justify-center items-center">
 
-                <div className=" ">
-                    <h1 className="text-6xl flex font-bold flex-col gap-10 text-[#fbcc07]  " >
+                <div className="   ">
+                    <h1 className="text-4xl sm:text-6xl text-center flex font-bold flex-col tracking-wider gap-10 text-[#fbcc07]  " >
 
                         {
                             title
