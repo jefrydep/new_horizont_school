@@ -5,7 +5,6 @@ import PresentationCard from "@/components/PresentationCard";
 import RegisterCard from "@/components/RegisterCard";
 import StudentCard from "@/components/StudentCard";
 import TrajectoryCard from "@/components/TrajectoryCard";
-import Image from "next/image";
 
 export default function Home() {
   return (
