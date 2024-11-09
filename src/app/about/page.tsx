@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import { useState } from "react";
+ 
 
 export default function AboutPage() {
   
