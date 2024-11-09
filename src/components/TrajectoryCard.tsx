@@ -1,9 +1,9 @@
 import { GraduationCapIcon, School, TrophyIcon } from "lucide-react";
 
-interface Props {
-    title: string;
-    subtitle: string
-}
+// interface Props {
+//     title: string;
+//     subtitle: string
+// }
 export default function TrajectoryCard() {
     return (
         <div className="bg-backgroundGray w-full  mt-10 shadow">
