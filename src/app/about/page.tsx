@@ -5,7 +5,7 @@ export default function AboutPage() {
   
   return (
     <div> 
-        <Hero subtitle="NUESTRA HISTORIA" title="¿Quienes Somos?" />
+        <Hero subtitle="NUESTRA HISTORIA" title="¿Quienes Somos?" img="/nosotros.png" />
     </div>
   )
 }

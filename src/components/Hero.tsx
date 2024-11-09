@@ -4,9 +4,10 @@ interface Props {
     title: string,
     subtitle: string;
     year?: string;
+    img?: string
 }
 
-export default function Hero({ title, subtitle, year }: Props) {
+export default function Hero({ title, subtitle, year, img }: Props) {
     return (
         <section className="container m-auto" >
             <div className=" flex  w-full font-bold sm:w-min px-2 py-2 tracking-wider rounded gap-4 mt-5 bg-subtitle">
@@ -46,7 +47,10 @@ export default function Hero({ title, subtitle, year }: Props) {
 
                 </div>
                 <div>
-                    <img src="/banner-principal.png" alt="" />
+                    <img
+                        src={img ? img : '/banner-principal.png'}
+                        alt="Imagen principal"
+                    />
                 </div>
             </div>
         </section>
