@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
-import { Children, useState } from "react"; // Importamos useState para manejar el estado del menú
+import { useState } from "react"; // Importamos useState para manejar el estado del menú
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -30,11 +30,8 @@ const navMenu = [
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false); // Estado para controlar el menú hamburguesa
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen); // Alternamos el estado del menú
-  };
+   
 
   return (
     <div className="border-b sticky shadow py-2 px-4">
