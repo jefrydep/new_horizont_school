@@ -46,7 +46,7 @@ export default function Navbar() {
           </div>
 
           <div>
-            <span>COLEGIO</span>
+            <span>COLEGIO INTERNACIONAL</span>
             <h2 className="text-title">NUEVO HORIZONTE</h2>
           </div>
         </div>
@@ -57,9 +57,8 @@ export default function Navbar() {
             <Link
               key={item.id}
               href={item.path}
-              className={`${
-                item.path === pathname ? "text-subtitle border-b-2" : ""
-              }`}
+              className={`${item.path === pathname ? "text-subtitle border-b-2" : ""
+                }`}
             >
               {item.title}
             </Link>
@@ -70,36 +69,36 @@ export default function Navbar() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Acerca de</NavigationMenuTrigger>
-                <NavigationMenuContent   className="w-max px-2 py-4">
+                <NavigationMenuContent className="w-max px-2 py-4">
                   {/* <Link href="/about"  passHref> */}
-                    <NavigationMenuLink
+                  <NavigationMenuLink
                     href="/about"
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Quiénes Somos
-                    </NavigationMenuLink>
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    Quiénes Somos
+                  </NavigationMenuLink>
                   {/* </Link> */}
                   {/* <Link href="/vision" passHref> */}
-                    <NavigationMenuLink href="/vision"
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Visión y Misión
-                    </NavigationMenuLink>
+                  <NavigationMenuLink href="/vision"
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    Visión y Misión
+                  </NavigationMenuLink>
                   {/* </Link> */}
                   {/* <Link href="/team" passHref> */}
-                    <NavigationMenuLink href="/team"
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Nuestro Equipo
-                    </NavigationMenuLink>
+                  <NavigationMenuLink href="/team"
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    Nuestro Equipo
+                  </NavigationMenuLink>
                   {/* </Link> */}
-              
+
                   {/* <Link href="/infrastructure" passHref> */}
-                    <NavigationMenuLink href="/infrastructure"
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Infraestructura
-                    </NavigationMenuLink>
+                  <NavigationMenuLink href="/infrastructure"
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    Infraestructura
+                  </NavigationMenuLink>
                   {/* </Link> */}
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -109,9 +108,9 @@ export default function Navbar() {
           <Button className="text-white">SianNet</Button>
         </div>
         <Sheet>
-          <SheetTrigger asChild className=" sm:hidden">  
+          <SheetTrigger asChild className=" mr-2 sm:hidden">
             <svg
-              className="w-6 h-6"
+              className="w-10 h-10"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -124,15 +123,70 @@ export default function Navbar() {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-           </SheetTrigger>
+          </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <SheetTitle>Are you absolutely sure?</SheetTitle>
-              <SheetDescription>
-                This action cannot be undone. This will permanently delete your
-                account and remove your data from our servers.
-              </SheetDescription>
+              <SheetTitle className="text-title">Colegio Internacional NUEVO HORIZONTE</SheetTitle>
+              {/* <SheetDescription>
+                El talento y la inteligencia de nuestros alumnos y la alta preparación de nuestros profesores nos han hecho merecedores de los primeros lugares en premios de talla local, nacional. Ahora vamos por más...
+              </SheetDescription> */}
             </SheetHeader>
+            <hr className="border-title" />
+            <div className=" flex flex-col   gap-6 items-center text-secondary tracking-widest">
+              {navMenu.map((item) => (
+                <Link
+                  key={item.id}
+                  href={item.path}
+                  className={`${item.path === pathname ? "text-subtitle border-b-2" : ""
+                    }`}
+                >
+                  {item.title}
+                </Link>
+              ))}
+
+              {/* Menú desplegable  en moviles*/}
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger>Acerca de</NavigationMenuTrigger>
+                    <NavigationMenuContent className="w-max flex flex-col px-2 py-4">
+                      {/* <Link href="/about"  passHref> */}
+                      <NavigationMenuLink
+                        href="/about"
+                        className={navigationMenuTriggerStyle()}
+                      >
+                        Quiénes Somos
+                      </NavigationMenuLink>
+                      {/* </Link> */}
+                      {/* <Link href="/vision" passHref> */}
+                      <NavigationMenuLink href="/vision"
+                        className={navigationMenuTriggerStyle()}
+                      >
+                        Visión y Misión
+                      </NavigationMenuLink>
+                      {/* </Link> */}
+                      {/* <Link href="/team" passHref> */}
+                      <NavigationMenuLink href="/team"
+                        className={navigationMenuTriggerStyle()}
+                      >
+                        Nuestro Equipo
+                      </NavigationMenuLink>
+                      {/* </Link> */}
+
+                      {/* <Link href="/infrastructure" passHref> */}
+                      <NavigationMenuLink href="/infrastructure"
+                        className={navigationMenuTriggerStyle()}
+                      >
+                        Infraestructura
+                      </NavigationMenuLink>
+                      {/* </Link> */}
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+
+              <Button className="text-white">SianNet</Button>
+            </div>
           </SheetContent>
         </Sheet>
 

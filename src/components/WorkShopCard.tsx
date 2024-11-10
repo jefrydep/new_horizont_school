@@ -1,3 +1,4 @@
+import { Button } from "./ui/button";
 
 
 
@@ -23,6 +24,9 @@ export default function WorkShopCard({ title }: Props) {
                     <p className="text-gray-600 text-base">
                         En este taller los estudiantes explorarán diferentes técnicas artísticas como pintura, dibujo y escultura, fomentando la creatividad y expresión personal.
                     </p>
+                    <div className="text-center mt-3 text-white font-semibold tracking-wider">
+                        <Button className="bg-subtitle rounded-3xl">+Mas Información</Button>
+                    </div>
                 </div>
 
 
@@ -36,6 +40,9 @@ export default function WorkShopCard({ title }: Props) {
                     <p className="text-gray-600 text-base">
                         El taller de ciencias proporciona a los estudiantes una comprensión profunda de conceptos científicos mediante experimentos prácticos y actividades interactivas.
                     </p>
+                    <div className="text-center mt-3 text-white font-semibold tracking-wider">
+                        <Button className="bg-subtitle rounded-3xl">+Mas Información</Button>
+                    </div>
                 </div>
 
 
@@ -49,6 +56,9 @@ export default function WorkShopCard({ title }: Props) {
                     <p className="text-gray-600 text-base">
                         En este taller los estudiantes aprenderán sobre teoría musical, interpretación de instrumentos y composición, desarrollando su sentido del ritmo y la armonía.
                     </p>
+                    <div className="text-center mt-3 text-white font-semibold tracking-wider">
+                        <Button className="bg-subtitle rounded-3xl">+Mas Información</Button>
+                    </div>
                 </div>
             </div>
         </div>
