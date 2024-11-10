@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
-import { useState } from "react"; // Importamos useState para manejar el estado del menú
+import { Children, useState } from "react"; // Importamos useState para manejar el estado del menú
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -70,35 +70,37 @@ export default function Navbar() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Acerca de</NavigationMenuTrigger>
-                <NavigationMenuContent className="w-max px-2 py-4">
-                  <Link href="/about" passHref>
+                <NavigationMenuContent   className="w-max px-2 py-4">
+                  {/* <Link href="/about"  passHref> */}
                     <NavigationMenuLink
+                    href="/about"
                       className={navigationMenuTriggerStyle()}
                     >
                       Quiénes Somos
                     </NavigationMenuLink>
-                  </Link>
-                  <Link href="/vision" passHref>
-                    <NavigationMenuLink
+                  {/* </Link> */}
+                  {/* <Link href="/vision" passHref> */}
+                    <NavigationMenuLink href="/vision"
                       className={navigationMenuTriggerStyle()}
                     >
                       Visión y Misión
                     </NavigationMenuLink>
-                  </Link>
-                  <Link href="/team" passHref>
-                    <NavigationMenuLink
+                  {/* </Link> */}
+                  {/* <Link href="/team" passHref> */}
+                    <NavigationMenuLink href="/team"
                       className={navigationMenuTriggerStyle()}
                     >
                       Nuestro Equipo
                     </NavigationMenuLink>
-                  </Link>
-                  <Link href="/infrastructure" passHref>
-                    <NavigationMenuLink
+                  {/* </Link> */}
+              
+                  {/* <Link href="/infrastructure" passHref> */}
+                    <NavigationMenuLink href="/infrastructure"
                       className={navigationMenuTriggerStyle()}
                     >
                       Infraestructura
                     </NavigationMenuLink>
-                  </Link>
+                  {/* </Link> */}
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
