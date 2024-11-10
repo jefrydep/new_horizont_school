@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
-import { useState } from "react"; // Importamos useState para manejar el estado del menú
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -15,7 +14,7 @@ import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
+  // SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
