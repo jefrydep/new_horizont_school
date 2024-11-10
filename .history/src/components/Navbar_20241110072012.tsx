@@ -52,7 +52,7 @@ export default function Navbar() {
         </div>
 
         {/* Menú de navegación en pantallas grandes */}
-        <div className="hidden sm:flex gap-6 items-center text-secondary tracking-widest">
+        <div className="hidden  gap-6 items-center text-secondary tracking-widest">
           {navMenu.map((item) => (
             <Link
               key={item.id}
@@ -107,7 +107,7 @@ export default function Navbar() {
           <Button className="text-white">SianNet</Button>
         </div>
         <Sheet>
-          <SheetTrigger asChild className=" sm:hidden">  
+          <SheetTrigger asChild>  
             <svg
               className="w-6 h-6"
               fill="none"

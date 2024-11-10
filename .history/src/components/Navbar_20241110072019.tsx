@@ -107,7 +107,7 @@ export default function Navbar() {
           <Button className="text-white">SianNet</Button>
         </div>
         <Sheet>
-          <SheetTrigger asChild className=" sm:hidden">  
+          <SheetTrigger asChild>  
             <svg
               className="w-6 h-6"
               fill="none"

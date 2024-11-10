@@ -45,7 +45,7 @@ export default function RootLayout({
 
           {children}
           <div>
-            <img src="/icons/whatsapp.svg"  alt="" className="fixed h-20 bottom-4 sm:top-1/2 animate-bounce " />
+            <img src="/icons/whatsapp.svg"  alt="" className="fixed h-7 bottom-4 sm:top-1/2 animate-bounce " />
           </div>
         </main>
         <Footer />

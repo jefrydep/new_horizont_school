@@ -71,34 +71,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Acerca de</NavigationMenuTrigger>
                 <NavigationMenuContent className="w-max px-2 py-4">
-                  <Link href="/about" passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Quiénes Somos
-                    </NavigationMenuLink>
-                  </Link>
-                  <Link href="/vision" passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Visión y Misión
-                    </NavigationMenuLink>
-                  </Link>
-                  <Link href="/team" passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Nuestro Equipo
-                    </NavigationMenuLink>
-                  </Link>
-                  <Link href="/infrastructure" passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Infraestructura
-                    </NavigationMenuLink>
-                  </Link>
+                  
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
@@ -107,7 +80,7 @@ export default function Navbar() {
           <Button className="text-white">SianNet</Button>
         </div>
         <Sheet>
-          <SheetTrigger asChild className=" sm:hidden">  
+          <SheetTrigger asChild>
             <svg
               className="w-6 h-6"
               fill="none"
@@ -122,7 +95,7 @@ export default function Navbar() {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-           </SheetTrigger>
+          </SheetTrigger>
           <SheetContent>
             <SheetHeader>
               <SheetTitle>Are you absolutely sure?</SheetTitle>
@@ -131,6 +104,7 @@ export default function Navbar() {
                 account and remove your data from our servers.
               </SheetDescription>
             </SheetHeader>
+
           </SheetContent>
         </Sheet>
 

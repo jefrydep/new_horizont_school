@@ -107,7 +107,7 @@ export default function Navbar() {
           <Button className="text-white">SianNet</Button>
         </div>
         <Sheet>
-          <SheetTrigger asChild className=" sm:hidden">  
+          <SheetTrigger asChild>
             <svg
               className="w-6 h-6"
               fill="none"
@@ -122,7 +122,7 @@ export default function Navbar() {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-           </SheetTrigger>
+          </SheetTrigger>
           <SheetContent>
             <SheetHeader>
               <SheetTitle>Are you absolutely sure?</SheetTitle>
@@ -131,6 +131,7 @@ export default function Navbar() {
                 account and remove your data from our servers.
               </SheetDescription>
             </SheetHeader>
+            
           </SheetContent>
         </Sheet>
 

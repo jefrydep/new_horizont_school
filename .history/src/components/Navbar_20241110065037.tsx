@@ -69,16 +69,19 @@ export default function Navbar() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Acerca de</NavigationMenuTrigger>
+                <NavigationMenuTrigger>
+                  <div>Acerca de</div>
+                </NavigationMenuTrigger>
                 <NavigationMenuContent className="w-max px-2 py-4">
                   <Link href="/about" passHref>
                     <NavigationMenuLink
+                      asChild
                       className={navigationMenuTriggerStyle()}
                     >
                       Quiénes Somos
                     </NavigationMenuLink>
                   </Link>
-                  <Link href="/vision" passHref>
+                  {/* <Link href="/vision" passHref>
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                     >
@@ -98,46 +101,30 @@ export default function Navbar() {
                     >
                       Infraestructura
                     </NavigationMenuLink>
-                  </Link>
+                  </Link> */}
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
 
-          <Button className="text-white">SianNet</Button>
+          {/* <Button className="text-white">SianNet</Button> */}
         </div>
-        <Sheet>
-          <SheetTrigger asChild className=" sm:hidden">  
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-           </SheetTrigger>
-          <SheetContent>
-            <SheetHeader>
-              <SheetTitle>Are you absolutely sure?</SheetTitle>
-              <SheetDescription>
-                This action cannot be undone. This will permanently delete your
-                account and remove your data from our servers.
-              </SheetDescription>
-            </SheetHeader>
-          </SheetContent>
-        </Sheet>
 
         {/* Menú hamburguesa en pantallas pequeñas */}
       </nav>
-
-      {/* Menú desplegable en móviles */}
+      {/* 
+      <Sheet>
+        <SheetTrigger>Open</SheetTrigger>
+        <SheetContent>
+          <SheetHeader>
+            <SheetTitle>Are you absolutely sure?</SheetTitle>
+            <SheetDescription>
+              This action cannot be undone. This will permanently delete your
+              account and remove your data from our servers.
+            </SheetDescription>
+          </SheetHeader>
+        </SheetContent>
+      </Sheet> */}
     </div>
   );
 }

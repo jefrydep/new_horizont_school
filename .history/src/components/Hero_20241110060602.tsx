@@ -36,7 +36,7 @@ export default function Hero({ title, subtitle, year, img }: Props) {
                         </div>
                     </h1>
 
-                    <div className="flex justify-center text-white font-bold gap-4 mt-6">
+                    <div className="flex gap-4 mt-6">
                         <Button className="rounded-3xl">
                             Contáctecnos
                         </Button>

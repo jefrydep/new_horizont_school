@@ -106,8 +106,10 @@ export default function Navbar() {
 
           <Button className="text-white">SianNet</Button>
         </div>
-        <Sheet>
-          <SheetTrigger asChild className=" sm:hidden">  
+
+        {/* Menú hamburguesa en pantallas pequeñas */}
+        <div className="sm:hidden flex items-center">
+          <button onClick={toggleMenu} className="text-black">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -122,22 +124,86 @@ export default function Navbar() {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-           </SheetTrigger>
-          <SheetContent>
-            <SheetHeader>
-              <SheetTitle>Are you absolutely sure?</SheetTitle>
-              <SheetDescription>
-                This action cannot be undone. This will permanently delete your
-                account and remove your data from our servers.
-              </SheetDescription>
-            </SheetHeader>
-          </SheetContent>
-        </Sheet>
-
-        {/* Menú hamburguesa en pantallas pequeñas */}
+          </button>
+        </div>
       </nav>
 
       {/* Menú desplegable en móviles */}
+      <div
+        className={`${
+          isOpen ? "block" : "hidden"
+        } sm:hidden bg-gray-800 text-white`}
+      >
+        <div className="flex flex-col items-center py-4">
+          {navMenu.map((item) => (
+            <Link
+              key={item.id}
+              href={item.path}
+              className={`py-2 ${
+                item.path === pathname ? "text-subtitle border-b-2" : ""
+              }`}
+              onClick={() => setIsOpen(false)} // Cerrar el menú al hacer clic en un enlace
+            >
+              {item.title}
+            </Link>
+          ))}
+
+          {/* Menú de "Acerca de" */}
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="text-secondary">
+                  Acerca de
+                </NavigationMenuTrigger>
+                <NavigationMenuContent className="flex flex-col sm:w-max px-2 py-4 ">
+                  <Link href="/about" passHref>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Quiénes Somos
+                    </NavigationMenuLink>
+                  </Link>
+                  <Link href="/vision" passHref>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Visión y Misión
+                    </NavigationMenuLink>
+                  </Link>
+                  <Link href="/team" passHref>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Nuestro Equipo
+                    </NavigationMenuLink>
+                  </Link>
+                  <Link href="/infrastructure" passHref>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Infraestructura
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+
+          <Button className="text-white mt-4">SianNet</Button>
+        </div>
+      </div>
+      <Sheet>
+        <SheetTrigger>Open</SheetTrigger>
+        <SheetContent>
+          <SheetHeader>
+            <SheetTitle>Are you absolutely sure?</SheetTitle>
+            <SheetDescription>
+              This action cannot be undone. This will permanently delete your
+              account and remove your data from our servers.
+            </SheetDescription>
+          </SheetHeader>
+        </SheetContent>
+      </Sheet>
     </div>
   );
 }

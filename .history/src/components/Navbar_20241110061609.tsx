@@ -106,8 +106,10 @@ export default function Navbar() {
 
           <Button className="text-white">SianNet</Button>
         </div>
-        <Sheet>
-          <SheetTrigger asChild className=" sm:hidden">  
+
+        {/* Menú hamburguesa en pantallas pequeñas */}
+        <div className="sm:hidden flex items-center">
+          <button onClick={toggleMenu} className="text-black">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -122,22 +124,22 @@ export default function Navbar() {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-           </SheetTrigger>
-          <SheetContent>
-            <SheetHeader>
-              <SheetTitle>Are you absolutely sure?</SheetTitle>
-              <SheetDescription>
-                This action cannot be undone. This will permanently delete your
-                account and remove your data from our servers.
-              </SheetDescription>
-            </SheetHeader>
-          </SheetContent>
-        </Sheet>
-
-        {/* Menú hamburguesa en pantallas pequeñas */}
+          </button>
+        </div>
       </nav>
-
-      {/* Menú desplegable en móviles */}
+ 
+      <Sheet>
+        <SheetTrigger>Open</SheetTrigger>
+        <SheetContent>
+          <SheetHeader>
+            <SheetTitle>Are you absolutely sure?</SheetTitle>
+            <SheetDescription>
+              This action cannot be undone. This will permanently delete your
+              account and remove your data from our servers.
+            </SheetDescription>
+          </SheetHeader>
+        </SheetContent>
+      </Sheet>
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function TrajectoryCard() {
 
             <div className="container m-auto py-14"  >
                 <div className="flex    flex-col items-center gap-4 justify-center ">
-                    <h2 className="text-5xl text-center mt-5">Nuestra Trayectoria</h2>
+                    <h2 className="text-5xl mt-5">Nuestra Trayectoria</h2>
                     <p className="text-lg px-4">
                         Desde 1995, cientos de alumnos y alumnas han sido formados con éxito
                         con un modelo educativo que ha permitido la consecución del pleno desarrollo su personalidad.
