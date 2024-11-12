@@ -31,11 +31,17 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="       bg-title  px-4">
-      <nav className="container font-bold rounded-t-3xl  border-b-2 sticky top-8 bg-white flex justify-between items-center m-auto">
+    <div className="border-b sticky shadow  bg-subtitle  px-4">
+      <nav className="container font-bold  bg-white flex justify-between items-center m-auto">
         {/* Logo y texto del colegio */}
         <div className="flex items-center">
-          
+        <div>
+          <div className="flex flex-col items-center  ">
+            <div className="w-[84px]   h-[80px] bg-primary"></div>
+
+            <div className="w-0 h-0 border-l-[42px] border-l-transparent border-r-[42px] border-r-transparent border-t-[55px] border-primary"></div>
+          </div>
+        </div>
           <div>
             <img src="/logo.jpg" alt="Logo" className="h-24" />
           </div>
@@ -47,9 +53,9 @@ export default function Navbar() {
         </div>
         <div>
           <div className="flex flex-col items-center  ">
-            <div className="w-[84px]   h-[80px] bg-title"></div>
+            <div className="w-[84px]   h-[80px] bg-primary"></div>
 
-            <div className="w-0 h-0 border-l-[42px] border-l-transparent border-r-[42px] border-r-transparent border-t-[55px] border-title"></div>
+            <div className="w-0 h-0 border-l-[42px] border-l-transparent border-r-[42px] border-r-transparent border-t-[55px] border-primary"></div>
           </div>
         </div>
         {/* <div className="w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-t-[40px] border-t-blue-500"></div> */}

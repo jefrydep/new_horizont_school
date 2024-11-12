@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <div className="bg-title  px-2 sm:px-4 sm:py-2 w-full ">
+        <div className="bg-primary  px-2 sm:px-4 sm:py-2 w-full ">
           <div className=" flex gap-2 sm:gap-5 container justify-center items-center m-auto">
             <div className="text-white font-bold bg-title px-2 py-1 rounded-t-lg">
 

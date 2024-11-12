@@ -49,7 +49,7 @@ export default function Navbar() {
           <div className="flex flex-col items-center  ">
             <div className="w-[84px]   h-[80px] bg-title"></div>
 
-            <div className="w-0 h-0 border-l-[42px] border-l-transparent border-r-[42px] border-r-transparent border-t-[55px] border-title"></div>
+            <div className="w-0 h-0 border-l-[42px] border-l-transparent border-r-[42px] border-r-transparent border-t-[55px] border-subtitle"></div>
           </div>
         </div>
         {/* <div className="w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-t-[40px] border-t-blue-500"></div> */}

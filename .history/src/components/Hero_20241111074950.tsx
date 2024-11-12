@@ -11,8 +11,8 @@ export default function Hero({ title, subtitle, year, img }: Props) {
     return (
         <div>
 
-            <section className="container m-auto" >
-                <div className=" hidden sm:flex justify-center  w-full font-bold sm:w-min px-2 py-2 tracking-wider rounded gap-4 mt-5 bg-subtitle">
+            <section className="container bg-red-400 m-auto" >
+                <div className=" flex justify-center  w-full font-bold sm:w-min px-2 py-2 tracking-wider rounded gap-4 mt-5 bg-subtitle">
                     <span>Inicial</span>
                     <span>Primaria</span>
                     <span>secundaria</span>
