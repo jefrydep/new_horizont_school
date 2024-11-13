@@ -23,11 +23,11 @@ export default function PresentationCard({ title, subtitle }: Props) {
                     <div className="leading-10 text-base mt-4">
 
                         <p>
-                            El Colegio Particular Nuevo Horizonte de la ciudad de Juliaca, es una Institución Educativa que cuenta con los niveles de Inicial, Primaria y Secundaria, cuyo principio fundamental es la formación holística de nuestros estudiantes.
+                            El talento y la inteligencia de nuestros estudiantes y la alta preparación de nuestros docentes nos han hecho merecedores de los primeros lugares en premios de talla local, nacional. Ahora vamos por más...
+                            Rumbo a las Bodas de Plata.
+
                         </p>
-                        <p>
-                            Es decir, no sólo nos preocupamos por los conocimientos altamente competitivos de nuestros estudiantes, sino que trabajamos de la mano con el arte, la ciencia, el deporte, el liderazgo y el emprendimiento; cultivando y fortaleciendo siempre los valores como eje fundamental del desarrollo humano.
-                        </p>
+
                     </div>
                     <div>
                         <Accordion type="single" collapsible>
