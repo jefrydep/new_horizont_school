@@ -64,7 +64,7 @@ export const registerProcess = [
     }
 ]
 
-export const achievementsgoals = [
+export const achievements = [
     {
         "año": 2019,
         "nivel": "Primaria",

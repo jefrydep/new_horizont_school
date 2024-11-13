@@ -138,7 +138,11 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <SheetTitle className="text-title">
+              <SheetTitle  className="text-title ">
+                <div >
+                  <img src="/logo.jpg" alt="Logo" className="h-24" />
+                </div>
+
                 Colegio Internacional NUEVO HORIZONTE
               </SheetTitle>
               {/* <SheetDescription>
