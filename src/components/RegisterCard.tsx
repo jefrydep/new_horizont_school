@@ -1,10 +1,10 @@
 import { newStudents, promotedStudents, registerProcess } from "@/app/data/data";
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion"
+// import {
+//     Accordion,
+//     AccordionContent,
+//     AccordionItem,
+//     AccordionTrigger,
+// } from "@/components/ui/accordion"
 interface Props {
     title: string;
 }
@@ -58,15 +58,15 @@ export default function RegisterCard({ title }: Props) {
                     </div>
 
                 </div>
-                <div>
-                    <img src="/Estudiante-2.png" alt="" />
+                <div >
+                    <img src="/Estudiante-2.png" sizes="80px" alt="" />
                 </div>
 
 
 
             </div>
-            <div className="container   mx-auto bg-yellow-400 py-12 px-4">
-                <h2 className="text-4xl font-bold text-center text-primary mb-8">REQUISITOS PARA ESTUDIANTES PROMOVIDOS EN LA I.E.</h2>
+            <div className="container   mx-auto   py-12 px-4">
+                <h2 className="text-4xl font-bold text-center   mb-8 text-title">REQUISITOS PARA ESTUDIANTES PROMOVIDOS EN LA I.E.</h2>
 
                 <div className="overflow-x-auto">
                     <table className="  table-auto bg-white shadow-lg rounded-lg border-separate border-spacing-0">
@@ -101,8 +101,8 @@ export default function RegisterCard({ title }: Props) {
                     </table>
                 </div>
             </div>
-            <div className="container   mx-auto bg-yellow-400 py-12 px-4">
-                <h2 className="text-4xl font-bold text-center text-primary mb-8">REQUISITOS PARA ESTUDIANTES NUEVOS</h2>
+            <div className="container   mx-auto   py-12 px-4">
+                <h2 className="text-4xl font-bold text-center text-title mb-8">REQUISITOS PARA ESTUDIANTES NUEVOS</h2>
 
                 <div className="overflow-x-auto">
                     <table className="  table-auto bg-white shadow-lg rounded-lg border-separate border-spacing-0">
@@ -137,8 +137,8 @@ export default function RegisterCard({ title }: Props) {
                     </table>
                 </div>
             </div>
-            <div className="container   mx-auto bg-yellow-400 py-12 px-4">
-                <h2 className="text-4xl font-bold text-center text-primary mb-8">PROCEDIMIENTO DEL PROCESO DE MATRÍCULA PARA ESTUDIANTES NUEVOS</h2>
+            <div className="container   mx-auto   py-12 px-4">
+                <h2 className="text-4xl font-bold text-center text-title mb-8">PROCEDIMIENTO DEL PROCESO DE MATRÍCULA PARA ESTUDIANTES NUEVOS</h2>
 
                 <div className="overflow-x-auto">
                     <table className="  table-auto bg-white shadow-lg rounded-lg border-separate border-spacing-0">
