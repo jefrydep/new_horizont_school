@@ -1,3 +1,4 @@
+import { newStudents, promotedStudents, registerProcess } from "@/app/data/data";
 import {
     Accordion,
     AccordionContent,
@@ -20,7 +21,7 @@ export default function RegisterCard({ title }: Props) {
                     {/* <h4 className="text-4xl">{subtitle}</h4> */}
                     <div className="leading-10 text-base mt-4">
                         <div>
-                            <Accordion type="single" collapsible>
+                            {/* <Accordion type="single" collapsible>
                                 <AccordionItem value="item-1 "  >
                                     <AccordionTrigger className="text-primary font-bold ">NIVEL INICIAL</AccordionTrigger>
                                     <AccordionContent className="text-base leading-8">
@@ -44,8 +45,11 @@ export default function RegisterCard({ title }: Props) {
                                         Nuestra finalidad fundamental es consolidar a través de un trabajo especializado por áreas, un plan estructurado de las áreas curriculares que está enfocado en el desarrollo de competencias y proyectos científicos.
                                     </AccordionContent>
                                 </AccordionItem>
-                            </Accordion>
+                            </Accordion> */}
 
+                            El proceso de matrícula para estudiantes del colegio se realizará del 02 de ENERO al 03 de MARZO de 2025. De no efectuarse la renovación del contrato de servicios educativos en los plazos descritos, la vacante se pondrá a disposición de los estudiantes nuevos conforme al contrato de servicios educativos.
+                            Para estudiantes nuevos y público en general:
+                            El proceso de matrícula para estudiantes nuevos y público en general se realizará del 02 de ENERO de 2025, hasta agotar la vacante.
 
 
 
@@ -59,6 +63,115 @@ export default function RegisterCard({ title }: Props) {
                 </div>
 
 
+
+            </div>
+            <div className="container   mx-auto bg-yellow-400 py-12 px-4">
+                <h2 className="text-4xl font-bold text-center text-primary mb-8">REQUISITOS PARA ESTUDIANTES PROMOVIDOS EN LA I.E.</h2>
+
+                <div className="overflow-x-auto">
+                    <table className="  table-auto bg-white shadow-lg rounded-lg border-separate border-spacing-0">
+                        {/* Cabecera de la tabla */}
+                        <thead>
+                            <tr className="bg-primary text-white">
+                                <th className="py-3 px-6 text-lg font-semibold text-center">#</th>
+                                <th className="py-3 px-6 text-lg font-semibold">Descripción</th>
+                            </tr>
+                        </thead>
+
+                        {/* Cuerpo de la tabla */}
+                        <tbody>
+                            {/* Paso 1 */}
+                            {promotedStudents.map(p => (
+
+
+                                <tr className="hover:bg-gray-50" key={p.id}>
+                                    <td className="py-3 px-6 text-center text-xl font-semibold text-gray-700">{p.id}</td>
+                                    <td className="py-3 px-6 text-gray-600">
+                                        {p.requirement}
+                                    </td>
+                                </tr>
+                            ))
+
+
+
+                            }
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div className="container   mx-auto bg-yellow-400 py-12 px-4">
+                <h2 className="text-4xl font-bold text-center text-primary mb-8">REQUISITOS PARA ESTUDIANTES NUEVOS</h2>
+
+                <div className="overflow-x-auto">
+                    <table className="  table-auto bg-white shadow-lg rounded-lg border-separate border-spacing-0">
+                        {/* Cabecera de la tabla */}
+                        <thead>
+                            <tr className="bg-primary text-white">
+                                <th className="py-3 px-6 text-lg font-semibold text-center">#</th>
+                                <th className="py-3 px-6 text-lg font-semibold">Descripción</th>
+                            </tr>
+                        </thead>
+
+                        {/* Cuerpo de la tabla */}
+                        <tbody>
+                            {/* Paso 1 */}
+                            {newStudents.map(p => (
+
+
+                                <tr className="hover:bg-gray-50" key={p.id}>
+                                    <td className="py-3 px-6 text-center text-xl font-semibold text-gray-700">{p.id}</td>
+                                    <td className="py-3 px-6 text-gray-600">
+                                        {p.titulo}
+                                    </td>
+                                </tr>
+                            ))
+
+
+
+                            }
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div className="container   mx-auto bg-yellow-400 py-12 px-4">
+                <h2 className="text-4xl font-bold text-center text-primary mb-8">PROCEDIMIENTO DEL PROCESO DE MATRÍCULA PARA ESTUDIANTES NUEVOS</h2>
+
+                <div className="overflow-x-auto">
+                    <table className="  table-auto bg-white shadow-lg rounded-lg border-separate border-spacing-0">
+                        {/* Cabecera de la tabla */}
+                        <thead>
+                            <tr className="bg-primary text-white">
+                                <th className="py-3 px-6 text-lg font-semibold text-center">#</th>
+                                <th className="py-3 px-6 text-lg font-semibold">Descripción</th>
+                            </tr>
+                        </thead>
+
+                        {/* Cuerpo de la tabla */}
+                        <tbody>
+                            {/* Paso 1 */}
+                            {registerProcess.map(p => (
+
+
+                                <tr className="hover:bg-gray-50" key={p.id}>
+                                    <td className="py-3 px-6 text-center text-xl font-semibold text-gray-700">{p.id}</td>
+                                    <td className="py-3 px-6 text-gray-600">
+                                        {p.titulo}
+                                    </td>
+                                </tr>
+                            ))
+
+
+
+                            }
+
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     )

@@ -2,36 +2,21 @@ import { Check } from "lucide-react";
 const student = [
     {
         id: 1,
-        profile: "Emprendedor"
+        profile: "Puntual"
     },
     {
         id: 2,
-        profile: "Crítico"
+        profile: "Respetuoso"
     },
     {
         id: 3,
-        profile: "Autónomo"
+        profile: "Responsable"
     },
     {
         id: 4,
-        profile: "Comunicador"
+        profile: "Honesto"
     },
-    {
-        id: 5,
-        profile: "Investigador"
-    },
-    {
-        id: 6,
-        profile: "Feliz"
-    },
-    {
-        id: 7,
-        profile: "Competitivo"
-    },
-    {
-        id: 8,
-        profile: "Integro"
-    }
+
 ]
 interface Props {
     title: string;
