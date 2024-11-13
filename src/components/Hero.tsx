@@ -17,7 +17,7 @@ export default function Hero({ title, subtitle, year, img }: Props) {
                     <span>Primaria</span>
                     <span>secundaria</span>
                 </div>
-                <div className="h-[80vh]   flex flex-col sm:flex-row justify-center items-center">
+                <div className="h-[30vh]   flex flex-col sm:flex-row justify-center items-center">
 
                     <div className="   ">
                         <h1 className="text-4xl sm:text-6xl text-center flex font-bold flex-col tracking-wider gap-10 text-[#fbcc07]  " >
@@ -60,7 +60,21 @@ export default function Hero({ title, subtitle, year, img }: Props) {
                             alt="Imagen principal"
                         />
                     </div>
+                    <div className="w-full  h-40 relative">
+                        <svg
+                            className="absolute bottom-0 left-0 w-full"
+                            viewBox="0 0 500 150"
+                            preserveAspectRatio="none"
+                        >
+                            {/* Aquí usamos el color de Tailwind directamente en el atributo fill */}
+                            <path
+                                d="M0.00,49.98 C149.54,170.23 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                                fill="#ff0000" // Puedes usar cualquier color de Tailwind aquí
+                            ></path>
+                        </svg>
+                    </div>
                 </div>
+
             </section>
         </div>
     )

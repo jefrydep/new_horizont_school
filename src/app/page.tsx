@@ -8,7 +8,7 @@ import TrajectoryCard from "@/components/TrajectoryCard";
 
 export default function Home() {
   return (
-    <div className=" ">
+    <div className="">
       <Hero title="¡Ya Iniciamos!" subtitle="ADMISION" year="2025" />
       <TrajectoryCard />
       <PresentationCard title="¡Bienvenidos Al Colegio!" subtitle="Nuevo Horizonte" />
