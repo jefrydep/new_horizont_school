@@ -6,7 +6,7 @@ import { GraduationCapIcon, School, TrophyIcon } from "lucide-react";
 // }
 export default function TrajectoryCard() {
     return (
-        <div className="bg-backgroundGray w-full  mt-10 shadow">
+        <div className="bg-backgroundGray w-full   shadow">
 
             <div className="container m-auto py-14"  >
                 <div className="flex    flex-col items-center gap-4 justify-center ">
