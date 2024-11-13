@@ -19,6 +19,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { GraduationCapIcon } from "lucide-react";
 
 const navMenu = [
   { id: "1", path: "/", title: "Inicio" },
@@ -31,11 +32,11 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="       bg-title  px-4">
-      <nav className="container font-bold rounded-t-3xl  border-b-2 sticky top-8 bg-white flex justify-between items-center m-auto">
+    <div className="  border  shadow-sm       px-4">
+      <nav className="container font-bold rounded-t-3xl  sticky top-8 bg-white flex justify-between items-center m-auto">
         {/* Logo y texto del colegio */}
         <div className="flex items-center">
-          
+
           <div>
             <img src="/logo.jpg" alt="Logo" className="h-24" />
           </div>
@@ -60,9 +61,8 @@ export default function Navbar() {
             <Link
               key={item.id}
               href={item.path}
-              className={`${
-                item.path === pathname ? "text-subtitle border-b-2" : ""
-              }`}
+              className={`${item.path === pathname ? "text-subtitle border-b-2" : ""
+                }`}
             >
               {item.title}
             </Link>
@@ -112,7 +112,12 @@ export default function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <Button className="text-white">SianNet</Button>
+          <Button className="text-white  mr-4 bg-title ">
+            <a target="_blank" className="flex gap-3" href="https://www.peruschool.com.pe/NHJuliaca">
+
+              <  GraduationCapIcon />  PerúSchool
+            </a>
+          </Button>
         </div>
         <Sheet>
           <SheetTrigger asChild className=" mr-2 sm:hidden">
@@ -146,9 +151,8 @@ export default function Navbar() {
                 <Link
                   key={item.id}
                   href={item.path}
-                  className={`${
-                    item.path === pathname ? "text-subtitle border-b-2" : ""
-                  }`}
+                  className={`${item.path === pathname ? "text-subtitle border-b-2" : ""
+                    }`}
                 >
                   {item.title}
                 </Link>
@@ -198,7 +202,13 @@ export default function Navbar() {
                 </NavigationMenuList>
               </NavigationMenu>
 
-              <Button className="text-white">SianNet</Button>
+
+              <Button className="text-white  mr-4 bg-title ">
+                <a target="_blank" className="flex gap-3" href="https://www.peruschool.com.pe/NHJuliaca">
+
+                  <  GraduationCapIcon />  PerúSchool
+                </a>
+              </Button>
             </div>
           </SheetContent>
         </Sheet>

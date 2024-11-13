@@ -9,8 +9,8 @@ interface Props {
 }
 export default function RegisterCard({ title }: Props) {
     return (
-        <div>
-            <div className="text-4xl mt-4 text-title font-bold text-center">
+        <div className="bg-primary pt-8">
+            <div className="text-4xl   text-white font-bold text-center">
                 {title}
             </div>
             <div className="container grid  grid-cols-1 sm:grid-cols-2   m-auto p-3">
