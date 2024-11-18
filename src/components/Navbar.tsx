@@ -32,23 +32,23 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="  border  shadow-sm       px-4">
+    <div className="  border   shadow-sm       px-4">
       <nav className="container font-bold rounded-t-3xl  sticky top-8 bg-white flex justify-between items-center m-auto">
         {/* Logo y texto del colegio */}
         <div className="flex items-center">
 
           <div>
-            <img src="/logo.jpg" alt="Logo" className="h-24" />
+            <img src="/logo.jpg" alt="Logo" className="h-16 sm:h-24" />
           </div>
 
-          <div>
+          <div className="text-sm sm:text-lg">
             <span>COLEGIO INTERNACIONAL</span>
             <h2 className="text-title">NUEVO HORIZONTE</h2>
           </div>
         </div>
         <div>
           <div className="flex flex-col items-center  ">
-            <div className="w-[84px]   h-[80px] bg-title"></div>
+            <div className=" w-[84px] h-[40px]  sm:h-[80px] bg-title"></div>
 
             <div className="w-0 h-0 border-l-[42px] border-l-transparent border-r-[42px] border-r-transparent border-t-[55px] border-title"></div>
           </div>

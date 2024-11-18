@@ -59,7 +59,7 @@ export default function RegisterCard({ title }: Props) {
 
                 </div>
                 <div >
-                    <img src="/Estudiante-2.png" sizes="80px" alt="" />
+                    <img src="/INICIAL.png" sizes="80px" alt="" />
                 </div>
 
 

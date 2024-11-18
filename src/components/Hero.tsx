@@ -10,7 +10,7 @@ interface Props {
 
 export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
     return (
-        <div className=" bg-title">
+        <div className=" bg-title ">
             <section className="container m-auto">
                 <div className="hidden  sm:flex justify-center w-full font-bold sm:w-min px-2 py-2 tracking-wider rounded gap-4 mt-5 bg-subtitle">
                     <span>Inicial</span>
@@ -26,8 +26,8 @@ export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
                             {title}
                             <br />
                             <div>
-                                <span className="text-primary">{subtitle}</span>
-                                <span className="text-[#73060c] ml-6">{year}</span>
+                                <span className="text-white">{subtitle}</span>
+                                <span className="text-white ml-6">{year}</span>
                             </div>
                         </h1>
 
@@ -52,11 +52,11 @@ export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
                     </div>
 
                     {/* Imagen */}
-                    <div className="sm:w-[50%] z-40">
+                    <div className=" w-full  flex justify-center sm:w-[50%] z-40">
                         <img
-                            src={img ? img : '/banner-principal.png'}
+                            src={img ? img : '/SECUNDARIA.png'}
                             alt="Imagen principal"
-                            className="w-full h-auto"
+                            className=" h-[29rem] sm:h-[40rem] animate-in   "
                         />
                     </div>
                     <div className="absolute bottom-0 sm:hidden w-full h-16">
