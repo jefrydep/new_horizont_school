@@ -29,7 +29,7 @@ export default function StudentCard({ title }: Props) {
             <h4 className="text-4xl  text-title text-center font-bold">{title}</h4>
             <div className="container grid  grid-cols-1 sm:grid-cols-2   m-auto p-3">
                 <div>
-                    <img src="/ajedrez.png" alt="" />
+                    <img src="/primaria.png" alt="nivel primaria" className="h-[23rem] sm:h-[33rem]" />
                 </div>
                 <div className="  w-full ">
                     {/* <h4 className="text-4xl">{subtitle}</h4> */}

@@ -16,7 +16,7 @@ export default function PresentationCard({ title, subtitle }: Props) {
     return (
         <div>
 
-            <div className="container grid  grid-cols-1 sm:grid-cols-2   m-auto p-3">
+            <div className="container grid  grid-cols-1 sm:grid-cols-2 gap-10   m-auto p-3">
                 <div className="  w-full ">
                     <h4 className="text-4xl mt-4">{title}</h4>
                     <h4 className="text-4xl font-bold text-title">{subtitle}</h4>
@@ -62,7 +62,7 @@ export default function PresentationCard({ title, subtitle }: Props) {
                     </div>
                 </div>
                 <div>
-                    <img src="/Estudiante-1.png" alt="" />
+                    <img src="/matricula.png" alt=""  className="sm:h-[35rem]"/>
                 </div>
 
 

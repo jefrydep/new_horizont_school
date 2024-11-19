@@ -17,7 +17,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "COLEGIO INTERNACIONAL NUEVO HORIZONTE",
-  description: "el mejor colegio de JULIACA",
+  description: "el mejor colegio de JULIACA,Colegio internacional nuevo horizonte",
+  icons:"/logo.jpg"
 };
 
 export default function RootLayout({

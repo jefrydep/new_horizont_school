@@ -31,7 +31,7 @@ export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
                             </div>
                         </h1>
 
-                        <div className="flex justify-center z-50 text-white font-bold gap-4 mt-6">
+                        <div className="flex justify-center z-50  duration-75 text-white font-bold gap-4 mt-6">
                             <Button className="rounded-3xl">
                                 <a href="https://wa.me/+51999070701?text=Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula,%20requisitos%20y%20fechas%20importantes.%20Agradecer%C3%ADa%20su%20orientaci%C3%B3n%20para%20poder%20completar%20mi%20inscripci%C3%B3n%20de%20manera%20adecuada.%0A%0AQuedo%20atento%20a%20su%20respuesta.%0A%0ASaludos%20cordiales,%0A" target="_blank">
                                     Contáctenos
@@ -44,10 +44,10 @@ export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
                             </Button>
                         </div>
                         <div className="flex gap-3 mt-8">
-                            <h5 className="text-primary">
+                            <h5 className="text-subtitle ">
                                 Lema:
                             </h5>
-                            <b className="tracking-wider">“Horizontinos abriendo nuevos horizontes”</b>
+                            <b className="tracking-wider text-white">“Horizontinos abriendo nuevos horizontes”</b>
                         </div>
                     </div>
 
@@ -56,7 +56,7 @@ export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
                         <img
                             src={img ? img : '/SECUNDARIA.png'}
                             alt="Imagen principal"
-                            className=" h-[29rem] sm:h-[40rem] animate-in   "
+                            className=" h-[25rem] sm:h-[36rem]     "
                         />
                     </div>
                     <div className="absolute bottom-0 sm:hidden w-full h-16">
