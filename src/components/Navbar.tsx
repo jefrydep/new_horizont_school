@@ -19,7 +19,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { GraduationCapIcon } from "lucide-react";
+import { FileCheck, GraduationCapIcon } from "lucide-react";
 
 const navMenu = [
   { id: "1", path: "/", title: "Inicio" },
@@ -56,6 +56,13 @@ export default function Navbar() {
         {/* <div className="w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-t-[40px] border-t-blue-500"></div> */}
 
         {/* Menú de navegación en pantallas grandes */}
+        <div className="sm:flex gap-2  hidden">
+          <div className="text-title">
+
+            <FileCheck />
+          </div>
+          <a href="/boletin.pdf" target="_blank">Boletín Informativo 2025</a>
+        </div>
         <div className="hidden sm:flex gap-6 items-center text-secondary tracking-widest">
           {navMenu.map((item) => (
             <Link
@@ -138,8 +145,8 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <SheetTitle  className="text-title ">
-                <div >
+              <SheetTitle className="text-title ">
+                <div className="  flex justify-center" >
                   <img src="/logo.jpg" alt="Logo" className="h-24" />
                 </div>
 
@@ -149,7 +156,14 @@ export default function Navbar() {
                 El talento y la inteligencia de nuestros alumnos y la alta preparación de nuestros profesores nos han hecho merecedores de los primeros lugares en premios de talla local, nacional. Ahora vamos por más...
               </SheetDescription> */}
             </SheetHeader>
-            <hr className="border-title" />
+            <hr className="border-title mb-5" />
+            <div className="flex gap-2  text-center mb-5 ">
+              <div className="text-title">
+
+                <FileCheck />
+              </div>
+              <a href="/boletin.pdf" target="_blank">Boletín Informativo 2025</a>
+            </div>
             <div className=" flex flex-col   gap-6 items-center text-secondary tracking-widest">
               {navMenu.map((item) => (
                 <Link
