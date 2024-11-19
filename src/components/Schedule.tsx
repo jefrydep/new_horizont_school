@@ -1,14 +1,6 @@
-import React from 'react';
 import ScheduleCard from './Schedule.card';
 import { ScheduleData } from '@/app/data/data';
-
-// Definir los tipos para los datos de horarios
-interface Horario {
-  nivel: string;
-  horario: string | { manana: string; talleres: string };
-  actividades: string[];
-  talleres?: string[];
-}
+ 
 
  
 
