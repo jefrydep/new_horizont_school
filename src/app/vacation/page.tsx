@@ -1,6 +1,5 @@
 import Hero from "@/components/Hero";
 import Schedule from "@/components/Schedule";
-import { ScheduleData } from "../data/data";
  
 
 export default function VacationPage() {
