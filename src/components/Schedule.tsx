@@ -10,9 +10,7 @@ interface Horario {
   talleres?: string[];
 }
 
-interface HorariosProps {
-  horarios: Horario[];
-}
+ 
 
 // Componente principal que recibe el array de objetos y renderiza las tarjetas
 const Schedule = () => {

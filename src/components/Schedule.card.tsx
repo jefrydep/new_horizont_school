@@ -1,4 +1,3 @@
-import React from 'react';
 
 // Definir los tipos para las props
 interface ScheduleCardProps {
