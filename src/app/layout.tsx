@@ -18,7 +18,6 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "COLEGIO INTERNACIONAL NUEVO HORIZONTE",
   description: "el mejor colegio de JULIACA,Colegio internacional nuevo horizonte",
-  // icons: "/logo.jpg"
 };
 
 export default function RootLayout({
@@ -62,8 +61,7 @@ export default function RootLayout({
               <img src="/whatsapp.png" alt="" className=" animate-bounce h-11  sm:h-16" />
             </a>
 
-            <a href=" 
-            https://www.tiktok.com/@colegionuevohorizonte" target="_blank">
+            <a href="https://www.tiktok.com/@colegionuevohorizonte" target="_blank">
               {/* Solicitar información */}
               <img src="/tik-tok.png" alt="" className=" animate-bounce h-11  sm:h-16 " />
             </a>
