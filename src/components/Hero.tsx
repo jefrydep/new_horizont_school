@@ -56,7 +56,8 @@ export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
                         <img
                             src={img ? img : '/SECUNDARIA.png'}
                             alt="Imagen principal"
-                            className=" h-[25rem] sm:h-[36rem]     "
+                            className=" h-[25rem] sm:h-[36rem]    "
+
                         />
                     </div>
                     <div className="absolute bottom-0 sm:hidden w-full h-16">

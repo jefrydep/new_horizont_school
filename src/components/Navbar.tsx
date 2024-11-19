@@ -24,8 +24,9 @@ import { FileCheck, GraduationCapIcon } from "lucide-react";
 const navMenu = [
   { id: "1", path: "/", title: "Inicio" },
   { id: "2", path: "/newstudent", title: "Matrículas" },
-  { id: "3", path: "/workshops", title: "Talleres" },
-  { id: "4", path: "/academy", title: "Academia" },
+  { id: "3", path: "/vacation", title: "Ciclo Vacacional 2025" },
+  // { id: "4", path: "/workshops", title: "Talleres" },
+  // { id: "5", path: "/academy", title: "Academia" },
 ];
 
 export default function Navbar() {
