@@ -1,4 +1,3 @@
-import React from 'react';
 
 // Componente Card para mostrar los logros
 // types.ts

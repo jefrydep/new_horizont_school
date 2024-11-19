@@ -1,10 +1,5 @@
 import ScheduleCard from './Schedule.card';
 import { ScheduleData } from '@/app/data/data';
- 
-
- 
-
-// Componente principal que recibe el array de objetos y renderiza las tarjetas
 const Schedule = () => {
   return (
     <div className="flex flex-wrap justify-center mt-6">
