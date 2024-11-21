@@ -33,19 +33,16 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="  border   shadow-sm       px-4">
+    <div className="  border   shadow-sm  p     px-4">
       <nav className="container font-bold rounded-t-3xl  sticky top-8 bg-white flex justify-between items-center m-auto">
         {/* Logo y texto del colegio */}
         <div className="flex items-center">
 
-          <div>
-            <img src="/logo.jpg" alt="Logo" className="h-16 sm:h-24" />
+          <div className=" ">
+            <img src="/LOGO.PNG" alt="Logo nuevo horizonte" className="h-32 sm:h-36" />
           </div>
 
-          <div className="text-sm sm:text-lg">
-            <span>COLEGIO INTERNACIONAL</span>
-            <h2 className="text-title">NUEVO HORIZONTE</h2>
-          </div>
+          
         </div>
         <div>
           <div className="flex flex-col items-center  ">
@@ -148,10 +145,10 @@ export default function Navbar() {
             <SheetHeader>
               <SheetTitle className="text-title ">
                 <div className="  flex justify-center" >
-                  <img src="/logo.jpg" alt="Logo" className="h-24" />
+                  <img src="/ISOLOGO.png" alt="Logo" className="h-36" />
                 </div>
 
-                Colegio Internacional NUEVO HORIZONTE
+             
               </SheetTitle>
               {/* <SheetDescription>
                 El talento y la inteligencia de nuestros alumnos y la alta preparación de nuestros profesores nos han hecho merecedores de los primeros lugares en premios de talla local, nacional. Ahora vamos por más...
