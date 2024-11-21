@@ -2,9 +2,9 @@
 interface Props {
     title: string;
     description: string;
-    img?: string;
+
 }
-const Card = ({ title,description, img }: Props) => {
+const Card = ({ title, description }: Props) => {
     return (
         <div className="  container mx-auto mb-4  bg-white rounded-lg shadow-md hover:shadow-2xl overflow-hidden flex flex-col md:flex-row">
             {/* Contenedor de texto */}
@@ -15,8 +15,8 @@ const Card = ({ title,description, img }: Props) => {
                 </p>
             </div>
 
-            {/* Imagen a la derecha */}
-            
+
+
 
         </div>
     );

@@ -1,5 +1,4 @@
-// components/ScheduleCard.tsx
-
+ 
 import React from 'react';
 
 interface ScheduleCardProps {
