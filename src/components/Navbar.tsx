@@ -33,15 +33,15 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="  border   shadow-sm  p     px-4">
-      <nav className="container font-bold rounded-t-3xl  sticky top-8 bg-white flex justify-between items-center m-auto">
+    <div className="  border   shadow-sm        px-4">
+      <nav className="container font-bold rounded-t-3xl shadow-md  sticky top-8 bg-white flex justify-between items-center m-auto">
         {/* Logo y texto del colegio */}
         <div className="flex items-center">
 
           <div className=" ">
-            <img src="/ISOLOGO.PNG" alt="Logo nuevo horizonte" className="h-28 sm:h-36" />
+            <img src="/ISOLOGO.png" alt="Logo nuevo horizonte" className="h-24 sm:h-28" />
           </div>
-          <div>
+          <div className="flex flex-col">
               COLEGIO INTERNACIONAL  <span className="text-title">NUEVO HORIZONTE</span>
           </div>
 

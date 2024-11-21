@@ -11,9 +11,9 @@ interface Props {
 export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
     return (
         <div className=" bg-title ">
-            <section className="container m-auto">
-                <div className="hidden  sm:flex justify-center w-full font-bold sm:w-min px-2 py-2 tracking-wider rounded gap-4 mt-5 bg-subtitle">
-                    <span>Inicial</span>
+            <section className="container m-auto pt-2">
+                <div className="   flex justify-center w-full sm:w-min font-bold      px-2 py-2 tracking-wider rounded gap-4   bg-subtitle">
+                    {/* <span>Inicial</span> */}
                     <span>Primaria</span>
                     <span>Secundaria</span>
                 </div>
