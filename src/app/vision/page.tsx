@@ -2,10 +2,10 @@ import Hero from '@/components/Hero'
 
 export default function VisionPage() {
     return (
-        <div> <Hero title='Nuestra Misión' subtitle='Nuestra Visión' />
+        <div> <Hero title='Nuestra Misión' subtitle='Nuestra Visión' colorWave='#fff' />
             <div className="max-w-7xl mx-auto my-10 px-6">
                 {/* Título centrado */}
-                <h2 className="text-3xl font-semibold text-center text-gray-800 mb-10  text-subtitle">Nuestra <b>
+                <h2 className="text-3xl font-semibold text-center   mb-10  text-subtitle">Nuestra <b>
                     Visión y Misión</b></h2>
 
                 {/* Grid de 2 columnas */}

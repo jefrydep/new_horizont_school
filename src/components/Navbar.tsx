@@ -33,8 +33,27 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="  border   shadow-sm   rounded-2xl      px-4">
-      <nav className="container font-bold rounded-t-3xl shadow-md  sticky top-8   flex justify-between items-center m-auto">
+    <div className="  border  z-50  shadow-sm  w-full  fixed bg-white  rounded-b-3xl       ">
+      <div className="bg-title  px-2 sm:px-4 sm:py-2 w-full ">
+        <div className=" flex gap-2 sm:gap-5  justify-center items-center  ">
+          <div className="text-white font-bold bg-subtitle px-2 py-1 rounded-t-lg">
+
+            ADMISIÓN
+          </div>
+          <div className="flex items-center gap-2 text-xs sm:text-sm ">
+            <p className=" font-semibold sm:font-bold   sm:tracking-widest text-white">50% DE DESCUENTO </p>
+            <span className="hidden sm:block text-subtitle  " >en inscripción para estudiante nuevos,</span>
+            <span className="font-semibold   underline text-white">
+              <a href="https://wa.me/+51999070701?text=Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula,%20requisitos%20y%20fechas%20importantes.%20Agradecer%C3%ADa%20su%20orientaci%C3%B3n%20para%20poder%20completar%20mi%20inscripci%C3%B3n%20de%20manera%20adecuada.%0A%0AQuedo%20atento%20a%20su%20respuesta.%0A%0ASaludos%20cordiales,%0A" target="_blank">
+                Solicitar información
+              </a>
+
+
+            </span>
+          </div>
+        </div>
+      </div>
+      <nav className="container font-bold     sticky top-8   flex justify-between items-center m-auto">
         {/* Logo y texto del colegio */}
         <div className="flex items-center">
 
@@ -42,10 +61,10 @@ export default function Navbar() {
             <img src="/ISOLOGO.png" alt="Logo nuevo horizonte" className="h-24 sm:h-28" />
           </div>
           <div className="flex flex-col text-sm sm:text-base">
-              COLEGIO INTERNACIONAL  <span className="text-title">NUEVO HORIZONTE</span>
+            COLEGIO INTERNACIONAL  <span className="text-title">NUEVO HORIZONTE</span>
           </div>
 
-          
+
         </div>
         <div className="hidden sm:block">
           <div className="flex flex-col items-center  ">
@@ -151,7 +170,7 @@ export default function Navbar() {
                   <img src="/ISOLOGO.png" alt="Logo" className="h-36" />
                 </div>
 
-             
+
               </SheetTitle>
               {/* <SheetDescription>
                 El talento y la inteligencia de nuestros alumnos y la alta preparación de nuestros profesores nos han hecho merecedores de los primeros lugares en premios de talla local, nacional. Ahora vamos por más...
@@ -182,7 +201,7 @@ export default function Navbar() {
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     <NavigationMenuTrigger>Acerca de</NavigationMenuTrigger>
-                    <NavigationMenuContent className="w-max flex z-50  flex-col px-2 py-4">
+                    <NavigationMenuContent className="w-max flex   flex-col px-2 py-4">
                       {/* <Link href="/about"  passHref> */}
                       <NavigationMenuLink
                         href="/about"

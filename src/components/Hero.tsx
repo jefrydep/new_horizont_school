@@ -11,18 +11,23 @@ interface Props {
 export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
     return (
         <div className=" bg-title ">
-            <section className="container m-auto pt-2">
+            
+            <section className="container m-auto pt-36">
+
                 <div className="   flex justify-center w-full sm:w-min font-bold      px-2 py-2 tracking-wider rounded gap-4   bg-subtitle">
                     {/* <span>Inicial</span> */}
                     <span>Primaria</span>
                     <span>Secundaria</span>
                 </div>
 
+
                 {/* Contenedor con la imagen, texto y botones */}
                 <div className="    flex flex-col sm:flex-row pt-24   sm:pt-40 relative">
+                    
 
                     <div className="   flex flex-col items-center sm:w-[50%] text-center px-4">
-                        <h1 className="text-4xl sm:text-6xl font-bold text-[#fbcc07] tracking-wider">
+
+                        <h1 className=" animate-slide-down-delay-2   text-4xl sm:text-6xl font-bold text-[#fbcc07] tracking-wider">
                             {title}
                             <br />
                             <div>
@@ -56,7 +61,7 @@ export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
                         <img
                             src={img ? img : '/SECUNDARIA.png'}
                             alt="Imagen principal"
-                            className=" h-[25rem] sm:h-[36rem]    "
+                            className=" h-[25rem] sm:h-[36rem]       "
 
                         />
                     </div>
@@ -89,6 +94,7 @@ export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
                     ></path>
                 </svg>
             </div>
+
         </div>
     );
 }

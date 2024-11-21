@@ -20,7 +20,7 @@ interface CardProps {
 
 const AchievementCard: React.FC<CardProps> = ({ year, level, achievements }) => {
     return (
-        <div className="bg-white shadow-lg rounded-lg p-6 mb-6 w-full max-w-md">
+        <div className="bg-white shadow-md hover:shadow-2xl rounded-lg p-6 mb-6 w-full max-w-md">
             <h3 className="text-xl font-semibold text-title mb-4">{`Año: ${year} | Nivel: ${level}`}</h3>
             <ul className="space-y-2">
                 {achievements.map((achievement, index) => (
