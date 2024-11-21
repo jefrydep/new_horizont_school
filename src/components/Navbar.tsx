@@ -33,8 +33,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="  border   shadow-sm        px-4">
-      <nav className="container font-bold rounded-t-3xl shadow-md  sticky top-8 bg-white flex justify-between items-center m-auto">
+    <div className="  border   shadow-sm   rounded-2xl      px-4">
+      <nav className="container font-bold rounded-t-3xl shadow-md  sticky top-8   flex justify-between items-center m-auto">
         {/* Logo y texto del colegio */}
         <div className="flex items-center">
 

@@ -28,7 +28,7 @@ export default function Footer() {
                                 Ruc :
                             </div>
                             <div>
-                                <span>20601184622</span>
+                                <span className="text-subtitle">20601184622</span>
 
                             </div>
                             <div className="text-white font-bold tracking-widest">
@@ -37,7 +37,7 @@ export default function Footer() {
                                 Ubicanos en :
                             </div>
                             <div>
-                                <span>Jr. San Salvador N° 873</span>
+                                <span className="text-subtitle">Jr. San Salvador N° 873</span>
 
                             </div>
                             <div className="text-white font-bold tracking-widest">
@@ -45,7 +45,7 @@ export default function Footer() {
 
                                 Teléfono :
                             </div>
-                            <div>
+                            <div className="text-subtitle">
                                 <span>051-358250</span>
 
                             </div>
@@ -54,7 +54,7 @@ export default function Footer() {
 
                                 WhatsApp :
                             </div>
-                            <div>
+                            <div className="text-subtitle">
                                 <span>999070701</span>
 
                             </div>
@@ -63,7 +63,7 @@ export default function Footer() {
 
                                 Correo :
                             </div>
-                            <div>
+                            <div className="text-subtitle">
                                 <span> colegionuevohorizontejuliaca@gmail.com</span>
 
                             </div>
@@ -77,6 +77,15 @@ export default function Footer() {
                     </div> */}
                     <div>
                         <h6 className="text-subtitle font-bold">HORARIO DE ATENCIÓN</h6>
+                        <div>
+                            <span className="text-white mr-3 font-bold tracking-widest">
+
+                                OFICINAS:
+                            </span>
+                            <span>
+                                Lun – Vier         08:00am – 03:00pm
+                            </span>
+                        </div>
 
                     </div>
                 </div>
