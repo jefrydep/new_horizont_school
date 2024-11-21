@@ -10,7 +10,7 @@ interface Props {
 
 export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
     return (
-        <div className=" bg-title ">
+        <div className=" bg-title  ">
             
             <section className="container m-auto pt-36">
 

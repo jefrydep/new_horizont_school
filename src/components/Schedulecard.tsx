@@ -1,5 +1,5 @@
  
-import React from 'react';
+ 
 
 interface ScheduleCardProps {
   nivel: string;
