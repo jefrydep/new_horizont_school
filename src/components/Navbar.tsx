@@ -39,12 +39,15 @@ export default function Navbar() {
         <div className="flex items-center">
 
           <div className=" ">
-            <img src="/LOGO.PNG" alt="Logo nuevo horizonte" className="h-32 sm:h-36" />
+            <img src="/ISOLOGO.PNG" alt="Logo nuevo horizonte" className="h-28 sm:h-36" />
+          </div>
+          <div>
+              COLEGIO INTERNACIONAL  <span className="text-title">NUEVO HORIZONTE</span>
           </div>
 
           
         </div>
-        <div>
+        <div className="hidden sm:block">
           <div className="flex flex-col items-center  ">
             <div className=" w-[84px] h-[40px]  sm:h-[80px] bg-title"></div>
 
