@@ -16,13 +16,7 @@ const Card = ({ title,description, img }: Props) => {
             </div>
 
             {/* Imagen a la derecha */}
-            <div className="w-full md:w-1/2">
-                <img
-                    className="w-full h-full object-cover"
-                    src={img ? img : "/ajedrez.png"}
-                    alt="Imagen de quiénes somos"
-                />
-            </div>
+            
 
         </div>
     );

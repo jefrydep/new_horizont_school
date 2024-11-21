@@ -8,7 +8,7 @@ import AchievementCard from "./AchievementCard";
  
 const AchievementList: React.FC = () => {
   return (
-    <div className="sm:grid  sm:grid-cols-3 flex flex-col  container m-auto  items-center space-y-6">
+    <div className="sm:grid  sm:grid-cols-3 flex flex-col  container m-auto  mb-3 items-center space-y-6">
       {achievements.map((data, index) => (
         <AchievementCard
           key={index}

@@ -14,7 +14,7 @@ interface Props {
 
 export default function PresentationCard({ title, subtitle }: Props) {
     return (
-        <div>
+        <div className="bg-gray-100">
 
             <div className="container grid  grid-cols-1 sm:grid-cols-2 gap-10   m-auto p-3">
                 <div className="  w-full ">
@@ -32,14 +32,14 @@ export default function PresentationCard({ title, subtitle }: Props) {
                     <div>
                         <Accordion type="single" collapsible>
                             <AccordionItem value="item-1 "  >
-                                <AccordionTrigger className="text-primary font-bold ">NIVEL INICIAL</AccordionTrigger>
+                                <AccordionTrigger className="text-title font-bold ">NIVEL INICIAL</AccordionTrigger>
                                 <AccordionContent className="text-base leading-8">
                                     ¡Éste es nuestro hermoso mundo!
                                     Nuestra metodología respeta los tiempos de desarrollo y aprendizaje de cada niño, aplicamos un currículo dividido en módulos especiales acorde a cada etapa.
                                 </AccordionContent>
                             </AccordionItem>
                             <AccordionItem value="item-2 "  >
-                                <AccordionTrigger className="text-primary font-bold ">NIVEL PRIMARIA </AccordionTrigger>
+                                <AccordionTrigger className="text-title font-bold ">NIVEL PRIMARIA </AccordionTrigger>
                                 <AccordionContent className="text-base leading-8">
                                     ¡Excelencia y dedicación en la formación del estudiante!
                                     Preparamos a nuestros estudiantes para responder a las exigencias de un mundo globalizado.
@@ -48,7 +48,7 @@ export default function PresentationCard({ title, subtitle }: Props) {
 
 
                             <AccordionItem value="item-3 "  >
-                                <AccordionTrigger className="text-primary font-bold ">NIVEL SECUNDARIA </AccordionTrigger>
+                                <AccordionTrigger className="text-title font-bold ">NIVEL SECUNDARIA </AccordionTrigger>
                                 <AccordionContent className="text-base leading-8">
                                     ¡Calidad e innovación en una formación integral!
                                     Nuestra finalidad fundamental es consolidar a través de un trabajo especializado por áreas, un plan estructurado de las áreas curriculares que está enfocado en el desarrollo de competencias y proyectos científicos.

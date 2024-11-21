@@ -41,7 +41,7 @@ export default function Navbar() {
           <div className=" ">
             <img src="/ISOLOGO.png" alt="Logo nuevo horizonte" className="h-24 sm:h-28" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col text-sm sm:text-base">
               COLEGIO INTERNACIONAL  <span className="text-title">NUEVO HORIZONTE</span>
           </div>
 
@@ -69,7 +69,7 @@ export default function Navbar() {
             <Link
               key={item.id}
               href={item.path}
-              className={`${item.path === pathname ? "text-subtitle border-b-2" : ""
+              className={`hover:text-title ${item.path === pathname ? "text-subtitle border-b-2" : ""
                 }`}
             >
               {item.title}
@@ -182,7 +182,7 @@ export default function Navbar() {
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     <NavigationMenuTrigger>Acerca de</NavigationMenuTrigger>
-                    <NavigationMenuContent className="w-max flex flex-col px-2 py-4">
+                    <NavigationMenuContent className="w-max flex z-50  flex-col px-2 py-4">
                       {/* <Link href="/about"  passHref> */}
                       <NavigationMenuLink
                         href="/about"

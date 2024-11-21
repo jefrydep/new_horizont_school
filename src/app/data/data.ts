@@ -336,11 +336,14 @@ export const achievements = [
 
 
 
-export const ScheduleData = [
+ 
+  export const ScheduleData = [
     {
-      nivel: "Nivel Inicial",
+      nivel: "Inicial",
+      ciclo: "Vacacional 2025",
       horario: "8:15 a.m. a 12:30 p.m.",
-      actividades: [
+      areasCurriculares: [],
+      talleres: [
         "Divertimáticas",
         "Psicomotricidad y Destreza",
         "Desarrollo personal",
@@ -351,12 +354,10 @@ export const ScheduleData = [
       ]
     },
     {
-      nivel: "Nivel Primaria",
-      horario: {
-        manana: "7:50 a.m. a 12:30 p.m.",
-        talleres: "2:00 p.m. a 3:30 p.m. o 3:30 p.m. a 5:00 p.m."
-      },
-      actividades: [
+      nivel: "Primaria",
+      ciclo: "Vacacional 2025",
+      horario: "Mañana: 7:50 a.m. a 12:30 p.m.",
+      areasCurriculares: [
         "Matemática",
         "Comunicación",
         "Ciencia y tecnología",
@@ -373,9 +374,66 @@ export const ScheduleData = [
       ]
     },
     {
-      nivel: "Nivel Secundaria",
+      nivel: "Secundaria",
+      ciclo: "Vacacional 2025",
+      horario: "Mañana: 7:50 a.m. a 12:30 p.m.",
+      areasCurriculares: [
+        "Matemática I (Aritmética, Álgebra)",
+        "Matemática II (Geometría, Trigonometría)",
+        "Comunicación",
+        "Razonamiento Matemático",
+        "Lenguaje, Literatura",
+        "Raz. Verbal",
+        "Biología, Química, Física"
+      ],
+      talleres: [
+        "Futsal",
+        "Vóley",
+        "Música",
+        "Dibujo y Pintura",
+        "Oratoria",
+        "Ajedrez"
+      ]
+    },
+    {
+      nivel: "Inicial",
+      ciclo: "Anual 2025",
+      horario: "8:15 a.m. a 1:30 p.m.",
+      areasCurriculares: [
+        "COMUNICACIÓN",
+        "MATEMÁTICA",
+        "PERSONAL SOCIAL",
+        "CIENCIA Y TECNOLOGÍA",
+        "PSICOMOTRIZ",
+        "INGLÉS",
+        "ARTE Y CULTURA",
+        "EDUCACIÓN FÍSICA",
+        "TUTORÍA"
+      ],
+      talleres: []
+    },
+    {
+      nivel: "Primaria",
+      ciclo: "Anual 2025",
+      horario: "7:45 a.m. a 2:10 p.m.",
+      areasCurriculares: [
+        "COMUNICACIÓN",
+        "MATEMÁTICA",
+        "PERSONAL SOCIAL",
+        "CIENCIA Y TECNOLOGÍA",
+        "INGLÉS",
+        "ARTE Y CULTURA (Dibujo y Pintura – Música)",
+        "EDUCACIÓN FÍSICA",
+        "EDUCACIÓN RELIGIOSA",
+        "TUTORÍA Y ORIENTACIÓN EDUCATIVA"
+      ],
+      talleres: []
+    },
+    {
+      nivel: "Secundaria",
+      ciclo: "Anual 2025",
       horario: "7:35 a.m. a 2:30 p.m.",
-      actividades: [
+      areasCurriculares: [
         "MATEMÁTICA (Aritmética, Álgebra, Geometría, Trigonometría, Raz. Matemático)",
         "COMUNICACIÓN (Lenguaje, Literatura, Raz. Verbal)",
         "CIENCIA Y TECNOLOGÍA (Química, Biología, Física)",
@@ -397,35 +455,7 @@ export const ScheduleData = [
         "Vóley",
         "Dibujo y Pintura"
       ]
-    },
-    {
-      nivel: "Nivel Inicial - Ciclo Anual 2025",
-      horario: "8:15 a.m. a 1:30 p.m.",
-      actividades: [
-        "COMUNICACIÓN",
-        "MATEMÁTICA",
-        "PERSONAL SOCIAL",
-        "CIENCIA Y TECNOLOGÍA",
-        "PSICOMOTRIZ",
-        "INGLÉS",
-        "ARTE Y CULTURA",
-        "EDUCACIÓN FÍSICA",
-        "TUTORÍA"
-      ]
-    },
-    {
-      nivel: "Nivel Primaria - Ciclo Anual 2025",
-      horario: "7:45 a.m. a 2:10 p.m.",
-      actividades: [
-        "COMUNICACIÓN",
-        "MATEMÁTICA",
-        "PERSONAL SOCIAL",
-        "CIENCIA Y TECNOLOGÍA",
-        "INGLÉS",
-        "ARTE Y CULTURA (Dibujo y Pintura – Música)",
-        "EDUCACIÓN FÍSICA",
-        "EDUCACIÓN RELIGIOSA",
-        "TUTORÍA Y ORIENTACIÓN EDUCATIVA"
-      ]
     }
   ];
+  
+  

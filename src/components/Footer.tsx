@@ -3,16 +3,17 @@ export default function Footer() {
     return (
         <div className=" bg-title rounded-t-lg pb-2 ">
             <footer className="container m-auto ">
+
                 <div className="grid p-4 sm:p-5  sm:grid-cols-3 gap-5">
+                    <div className="text-subtitle flex justify-center sm:block bg-white rounded-xl font-bold">
 
+
+                        <img src="/LOGO.png" alt="Logo nuevo horizonte" className="   " />
+
+                    </div>
                     <div>
-                        <div className="text-subtitle flex justify-center sm:block font-bold">
-
-
-                            <img src="/ISOLOGO.png" alt="Logo nuevo horizonte" className="h-24 sm:h-28" />
-
-                        </div>
                         <span className="text-white font-bold tracking-widest">
+
                             Educación basada en  PROYECTOS
                         </span>
                         <hr />
@@ -71,10 +72,6 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* <div>
-                        <h6 className="text-subtitle font-bold">MAPA DEL SITIO</h6>
-
-                    </div> */}
                     <div>
                         <h6 className="text-subtitle font-bold">HORARIO DE ATENCIÓN</h6>
                         <div>
@@ -82,15 +79,15 @@ export default function Footer() {
 
                                 OFICINAS:
                             </span>
-                            <span>
-                                Lun – Vier         08:00am – 03:00pm
+                            <span className="text-subtitle">
+                                Lun – Vier         08:30am – 05:00pm
                             </span>
                         </div>
 
                     </div>
                 </div>
                 <div className="text-center text-gray-100 text-xs mt-4" >
-                    <span>
+                    <span className="">
                         © 2025 Todos los derechos reservados. Design by jefrysoftdev@gmail.com
                     </span>
                 </div>

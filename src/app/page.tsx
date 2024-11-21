@@ -9,7 +9,7 @@ import TrajectoryCard from "@/components/TrajectoryCard";
 export default function Home() {
   return (
     <div className="">
-      <Hero colorWave="#d1d1d1" title="¡Ya Iniciamos!" subtitle="ADMISION" year="2025" />
+      <Hero colorWave="#fff" title="¡Ya Iniciamos!" subtitle="ADMISION" year="2025" />
       <TrajectoryCard />
       <PresentationCard title="¡Bienvenidos Al Colegio!" subtitle="Nuevo Horizonte" />
       <StudentCard title="Nuestro Estudiante Es:" />

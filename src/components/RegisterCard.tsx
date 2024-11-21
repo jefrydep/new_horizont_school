@@ -22,12 +22,15 @@ export default function RegisterCard({ title }: Props) {
                     <div className="leading-10 text-base mt-4">
                         <div>
 
-                            El proceso de matrícula para estudiantes del colegio se realizará del 02 de ENERO al 03 de MARZO de 2025. De no efectuarse la renovación del contrato de servicios educativos en los plazos descritos, la vacante se pondrá a disposición de los estudiantes nuevos conforme al contrato de servicios educativos.
+                            El proceso de matrícula para estudiantes del colegio se realizará del <span className="text-title font-bold">
+                                02 de ENERO al 03 de MARZO de 2025</span> . De no efectuarse la renovación del contrato de servicios educativos en los plazos descritos, la vacante se pondrá a disposición de los estudiantes nuevos conforme al contrato de servicios educativos.
                             Para estudiantes nuevos y público en general:
-                            El proceso de matrícula para estudiantes nuevos y público en general se realizará del 02 de ENERO de 2025, hasta agotar la vacante.
+                            El proceso de matrícula para estudiantes nuevos y público en general se realizará del <span className="text-title font-bold">
+
+                                02 de ENERO de 2025</span> , hasta agotar la vacante.
                             <Accordion type="single" collapsible>
                                 <AccordionItem value="item-1 "  >
-                                    <AccordionTrigger className="text-primary font-bold ">REQUISITOS PARA ESTUDIANTES PROMOVIDOS EN LA I.E.</AccordionTrigger>
+                                    <AccordionTrigger className="text-title font-bold ">REQUISITOS PARA ESTUDIANTES PROMOVIDOS EN LA I.E.</AccordionTrigger>
                                     <AccordionContent className="text-base leading-8">
                                         <div className="container   mx-auto   py-12 px-4">
                                             {/* <h2 className="text-4xl font-bold text-center   mb-8 text-title">REQUISITOS PARA ESTUDIANTES PROMOVIDOS EN LA I.E.</h2> */}
@@ -36,7 +39,7 @@ export default function RegisterCard({ title }: Props) {
                                                 <table className="  table-auto bg-white shadow-lg rounded-lg border-separate border-spacing-0">
                                                     {/* Cabecera de la tabla */}
                                                     <thead>
-                                                        <tr className="bg-primary text-white">
+                                                        <tr className="bg-title text-white">
                                                             <th className="py-3 px-6 text-lg font-semibold text-center">#</th>
                                                             <th className="py-3 px-6 text-lg font-semibold">Descripción</th>
                                                         </tr>
@@ -68,7 +71,7 @@ export default function RegisterCard({ title }: Props) {
                                     </AccordionContent>
                                 </AccordionItem>
                                 <AccordionItem value="item-2 "  >
-                                    <AccordionTrigger className="text-primary font-bold ">REQUISITOS PARA ESTUDIANTES NUEVOS</AccordionTrigger>
+                                    <AccordionTrigger className="text-title font-bold ">REQUISITOS PARA ESTUDIANTES NUEVOS</AccordionTrigger>
                                     <AccordionContent className="text-base leading-8">
                                         <div className="container   mx-auto   py-12 px-4">
                                             {/* <h2 className="text-4xl font-bold text-center text-title mb-8">REQUISITOS PARA ESTUDIANTES NUEVOS</h2> */}
@@ -77,7 +80,7 @@ export default function RegisterCard({ title }: Props) {
                                                 <table className="  table-auto bg-white shadow-lg rounded-lg border-separate border-spacing-0">
                                                     {/* Cabecera de la tabla */}
                                                     <thead>
-                                                        <tr className="bg-primary text-white">
+                                                        <tr className="bg-title text-white">
                                                             <th className="py-3 px-6 text-lg font-semibold text-center">#</th>
                                                             <th className="py-3 px-6 text-lg font-semibold">Descripción</th>
                                                         </tr>
@@ -111,7 +114,7 @@ export default function RegisterCard({ title }: Props) {
 
 
                                 <AccordionItem value="item-3 "  >
-                                    <AccordionTrigger className="text-primary font-bold ">PROCEDIMIENTO DEL PROCESO DE MATRÍCULA PARA ESTUDIANTES NUEVOS </AccordionTrigger>
+                                    <AccordionTrigger className="text-title font-bold ">PROCEDIMIENTO DEL PROCESO DE MATRÍCULA PARA ESTUDIANTES NUEVOS </AccordionTrigger>
                                     <AccordionContent className="text-base leading-8">
                                         <div className="container   mx-auto   py-12 px-4">
                                             {/* <h2 className="text-4xl font-bold text-center text-title mb-8">PROCEDIMIENTO DEL PROCESO DE MATRÍCULA PARA ESTUDIANTES NUEVOS</h2> */}
@@ -120,7 +123,7 @@ export default function RegisterCard({ title }: Props) {
                                                 <table className="  table-auto bg-white shadow-lg rounded-lg border-separate border-spacing-0">
                                                     {/* Cabecera de la tabla */}
                                                     <thead>
-                                                        <tr className="bg-primary text-white">
+                                                        <tr className="bg-title text-white">
                                                             <th className="py-3 px-6 text-lg font-semibold text-center">#</th>
                                                             <th className="py-3 px-6 text-lg font-semibold">Descripción</th>
                                                         </tr>

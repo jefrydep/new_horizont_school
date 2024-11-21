@@ -19,7 +19,7 @@ export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
                 </div>
 
                 {/* Contenedor con la imagen, texto y botones */}
-                <div className="   h-[calc(100vh-140px)] flex flex-col sm:flex-row pt-24   sm:pt-40 relative">
+                <div className="    flex flex-col sm:flex-row pt-24   sm:pt-40 relative">
 
                     <div className="   flex flex-col items-center sm:w-[50%] text-center px-4">
                         <h1 className="text-4xl sm:text-6xl font-bold text-[#fbcc07] tracking-wider">
@@ -31,7 +31,7 @@ export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
                             </div>
                         </h1>
 
-                        <div className="flex justify-center z-50  duration-75 text-white font-bold gap-4 mt-6">
+                        <div className="flex justify-center z-40  duration-75 text-white font-bold gap-4 mt-6">
                             <Button className="rounded-3xl">
                                 <a href="https://wa.me/+51999070701?text=Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula,%20requisitos%20y%20fechas%20importantes.%20Agradecer%C3%ADa%20su%20orientaci%C3%B3n%20para%20poder%20completar%20mi%20inscripci%C3%B3n%20de%20manera%20adecuada.%0A%0AQuedo%20atento%20a%20su%20respuesta.%0A%0ASaludos%20cordiales,%0A" target="_blank">
                                     Contáctenos
@@ -52,7 +52,7 @@ export default function Hero({ title, subtitle, year, img, colorWave }: Props) {
                     </div>
 
                     {/* Imagen */}
-                    <div className=" w-full  flex justify-center sm:w-[50%] z-40">
+                    <div className=" w-full  flex justify-center sm:w-[50%] z-10">
                         <img
                             src={img ? img : '/SECUNDARIA.png'}
                             alt="Imagen principal"
