@@ -13,7 +13,6 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-
   title: "COLEGIO INTERNACIONAL NUEVO HORIZONTE",
   description: "el mejor colegio de JULIACA,Colegio internacional nuevo horizonte",
 };
@@ -24,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
 
       <body
         className={` ${lato.className} antialiased `}
