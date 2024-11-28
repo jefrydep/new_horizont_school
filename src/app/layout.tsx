@@ -13,7 +13,7 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: "COLEGIO INTERNACIONAL NUEVO HORIZONTE",
+  title: "COLEGIO INTERNACIONAL NUEVO HORIZONTE - JULIACA",
   description: "el mejor colegio de JULIACA,Colegio internacional nuevo horizonte",
 };
 
@@ -49,7 +49,7 @@ export default function RootLayout({
               {/* Solicitar información */}
               <img src="/facebook.png" alt="" className=" animate-bounce h-11  sm:h-16 " />
             </a>
-            <a href="https://www.instagram.com/colegionuevohorizonte" target="_blank">
+            <a href="https://www.instagram.com/colegionuevohorizontejuliaca" target="_blank">
               {/* Solicitar información */}
               <img src="/instagram.png" alt="" className=" animate-bounce h-11  sm:h-16" />
             </a>

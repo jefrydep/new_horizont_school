@@ -31,14 +31,8 @@ export default function PresentationCard({ title, subtitle }: Props) {
                     </div>
                     <div>
                         <Accordion type="single" collapsible>
+                          
                             <AccordionItem value="item-1 "  >
-                                <AccordionTrigger className="text-title font-bold ">NIVEL INICIAL</AccordionTrigger>
-                                <AccordionContent className="text-base leading-8">
-                                    ¡Éste es nuestro hermoso mundo!
-                                    Nuestra metodología respeta los tiempos de desarrollo y aprendizaje de cada niño, aplicamos un currículo dividido en módulos especiales acorde a cada etapa.
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="item-2 "  >
                                 <AccordionTrigger className="text-title font-bold ">NIVEL PRIMARIA </AccordionTrigger>
                                 <AccordionContent className="text-base leading-8">
                                     ¡Excelencia y dedicación en la formación del estudiante!
@@ -47,7 +41,7 @@ export default function PresentationCard({ title, subtitle }: Props) {
                             </AccordionItem>
 
 
-                            <AccordionItem value="item-3 "  >
+                            <AccordionItem value="item-2 "  >
                                 <AccordionTrigger className="text-title font-bold ">NIVEL SECUNDARIA </AccordionTrigger>
                                 <AccordionContent className="text-base leading-8">
                                     ¡Calidad e innovación en una formación integral!

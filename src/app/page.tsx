@@ -13,7 +13,7 @@ export default function Home() {
       <TrajectoryCard />
       <PresentationCard title="¡Bienvenidos Al Colegio!" subtitle="Nuevo Horizonte" />
       <StudentCard title="Nuestro Estudiante Es:" />
-      <RegisterCard title="Proceso De Matricula 2025" />
+      <RegisterCard title="Proceso De Matrícula 2025" />
       <Form />
       <Location/>
     </div>
