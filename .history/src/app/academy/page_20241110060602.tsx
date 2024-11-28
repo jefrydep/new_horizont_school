@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 export default function AcademyPage() {
   return (
     <div>
-      <Hero subtitle="ACADEMIA" title="¡Ven y Prepárate!"   />
+      <Hero subtitle="ACADEMIA" title="¡Ven y Prepárate!" img="/ajedrez.png" />
       <div className="max-w-4xl mx-auto py-10">
         {/* Card Contenedor */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
