@@ -1,31 +1,23 @@
 "use client";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { Textarea } from "@/components/ui/textarea";
+import { Textarea } from "@/components/ui/textarea"
 
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-interface valuesForm {
-  dni: string;
-  name: string;
-  lastname: string;
-  cellphone: string;
-  message: string;
-  email: string;
-}
+
 const ContactForm: React.FC = () => {
   const handleSubmit = async (
-    values: valuesForm,
+    values: any,
     { resetForm }: { resetForm: () => void }
   ) => {
-    const formattedValues = { ...values };
-
+    console.log(values);
     try {
       await emailjs.send(
         "service_ylr5l7x",
         "template_r33ljy7",
-        formattedValues,
+        values,
         "otiLUtXl2K09RKcCf"
       );
       alert("Mensaje enviado exitosamente");
@@ -136,6 +128,7 @@ const ContactForm: React.FC = () => {
             </div>
             <div>
               <Field
+
                 // as={Input}
                 name="message"
                 as={Textarea}
@@ -149,9 +142,7 @@ const ContactForm: React.FC = () => {
                 className="text-red-500"
               />
             </div>
-            <Button className="bg-green-500 text-white" type="submit">
-              Enviar
-            </Button>
+            <Button className="bg-green-500 text-white" type="submit">Enviar</Button>
           </Form>
         </Formik>
       </div>
