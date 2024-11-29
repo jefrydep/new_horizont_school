@@ -82,14 +82,7 @@ export default function Navbar() {
         {/* <div className="w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-t-[40px] border-t-blue-500"></div> */}
 
         {/* Menú de navegación en pantallas grandes */}
-        <div className="sm:flex gap-2  hidden">
-          <div className="text-title">
-            <FileCheck />
-          </div>
-          <a href="/boletin.pdf" target="_blank">
-            Boletín Informativo 2025
-          </a>
-        </div>
+
         <div className="hidden sm:flex gap-6 items-center text-secondary tracking-widest">
           {navMenu.map((item) => (
             <Link
@@ -111,7 +104,7 @@ export default function Navbar() {
                 <NavigationMenuContent className="w-max px-2 py-4">
                   {/* <Link href="/about"  passHref> */}
                   <NavigationMenuLink
-                    href="/about"
+                    href="/about/"
                     className={navigationMenuTriggerStyle()}
                   >
                     Quiénes Somos
@@ -147,7 +140,7 @@ export default function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <Button className="text-white  mr-4 bg-title ">
+          <Button className="text-white  mr-4 bg-title hover:bg-[#bd3c40e8]  ">
             <a
               target="_blank"
               className="flex gap-3"
@@ -157,8 +150,26 @@ export default function Navbar() {
             </a>
           </Button>
         </div>
+        <div className="   flex-col flex gap-2 ">
+          <div className="sm:flex gap-2 border  hidden rounded-md px-4 py-1  ">
+            <div className="text-title">
+              <FileCheck />
+            </div>
+            <a href="/boletin.pdf" target="_blank">
+              Boletín Informativo 2025
+            </a>
+          </div>
+          <div className="sm:flex gap-2 border  hidden rounded-md px-4 py-1 ">
+            <div className="text-title">
+              <FileCheck />
+            </div>
+            <a href="/Reglamento Interno.pdf" target="_blank">
+              Reglamento Interno
+            </a>
+          </div>
+        </div>
         <Sheet>
-          <SheetTrigger asChild className=" mr-2 sm:hidden">
+          <SheetTrigger asChild className=" mr-2 sm:hidden rounded-md">
             <svg
               className="w-10 h-10"
               fill="none"
@@ -192,6 +203,14 @@ export default function Navbar() {
               </div>
               <a href="/boletin.pdf" target="_blank">
                 Boletín Informativo 2025
+              </a>
+            </div>
+            <div className=" flex gap-2  text-center mb-5    ">
+              <div className="text-title">
+                <FileCheck />
+              </div>
+              <a href="/Reglamento Interno.pdf" target="_blank">
+                Reglamento Interno
               </a>
             </div>
             <div className=" flex flex-col   gap-6 items-center text-secondary tracking-widest">

@@ -10,9 +10,12 @@ export default function AboutPage() {
         subtitle="NUESTRA HISTORIA"
         title="¿Quienes Somos?"
       />
+      <Card title="AUTORIZACIÓN DE CREACIÓN Y FUNCIONAMIENTO"  description="R.D. N° 7826-02 de fecha 20 de agosto."/>
       <Card
         title="¿Quienes Somos ?"
-        description="Somos un Colegio de reconocida trayectoria educativa, que imparte una educación democrática centrada en el desarrollo del ser humano, en el marco del conocimiento y valoración de la cultura peruana."
+        description=" Somos un colegio de reconocida trayectoria educativa, que formamos estudiantes líderes, con valores y alto nivel académico, que les permita afrontar con éxito los retos del mundo globalizado.
+Mejores miembros de la sociedad con talento e inteligencia de nuestros estudiantes, a través del desarrollo de las competencias y capacidades de cada área curricular y con alta preparación de nuestros docentes que han hecho merecedores de los primeros lugares en lo concursos educativos nacionales a nivel UGEL, Regional y Nacional.
+"
       />
       <Card
         title="Nuestra Historia"
