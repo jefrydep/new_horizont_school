@@ -13,10 +13,10 @@ const HighlightStudent = () => {
         <div className="flex flex-col md:flex-row items-center bg-white m-2 text-gray-800 rounded-lg shadow-lg overflow-hidden p-4">
           {/* Columna Izquierda: Información */}
           <div className="md:w-auto text-center md:text-left p-4">
-            <h1 className="text-4xl font-bold mb-4 animate-bounce text-primary">
+            <h1 className="text-4xl font-bold mb-4 animate-accordion-up text-primary">
               ¡Felicitaciones!
             </h1>
-            <h2 className="text-2xl mb-2 animate-bounce text-title font-bold">
+            <h2 className="text-2xl mb-2 text-title font-bold">
               Shannen Diana Mamani Justo
             </h2>
             <p className="text-lg mb-4 font-light text-subtitle">

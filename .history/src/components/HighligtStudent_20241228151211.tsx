@@ -16,7 +16,7 @@ const HighlightStudent = () => {
             <h1 className="text-4xl font-bold mb-4 animate-bounce text-primary">
               ¡Felicitaciones!
             </h1>
-            <h2 className="text-2xl mb-2 animate-bounce text-title font-bold">
+            <h2 className="text-2xl mb-2 text-title font-bold">
               Shannen Diana Mamani Justo
             </h2>
             <p className="text-lg mb-4 font-light text-subtitle">
