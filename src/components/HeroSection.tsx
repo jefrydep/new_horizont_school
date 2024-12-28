@@ -1,11 +1,14 @@
+import { heroImage } from "@/app/data/data-image";
 import { Button } from "./ui/button";
 
 const HeroSection = () => {
+ 
   return (
     <div
       className="relative h-screen bg-cover bg-center"
       style={{
-        backgroundImage: "url('/admision-hero.jpg')",
+        // backgroundImage: "url('/admision-hero.jpg')",
+        backgroundImage:  `url(${heroImage})`,
         backgroundAttachment: "fixed", // Esto fija la imagen al hacer scroll
       }}
     >
@@ -14,15 +17,17 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center text-white h-full px-4">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">¡Ya Iniciamos!</h1>
-        <p className="sm:text-7xl text-5xl font-bold bg-subtitle rounded-2xl p-3     mb-8 text-white ">
-          Admisión 2025
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-bounce">¡Ya Iniciamos!</h1>
+        <p className="sm:text-7xl text-5xl font-bold   rounded-2xl p-3     mb-8 text-subtitle ">
+        <span className="animate-typing overflow-hidden border-r-2 border-green-400 inline-block">
+          Admisión 2025.
+        </span>
         </p>
 
         {/* Buttons */}
         <div>
           <div className="flex justify-center z-40   duration-75 text-white  gap-4 mt-6">
-            <Button className="rounded-3xl   tracking-widest">
+            <Button className="rounded-3xl bg-subtitle  tracking-widest">
               <a
                 href="https://wa.me/+51999070701?text=Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula,%20requisitos%20y%20fechas%20importantes.%20Agradecer%C3%ADa%20su%20orientaci%C3%B3n%20para%20poder%20completar%20mi%20inscripci%C3%B3n%20de%20manera%20adecuada.%0A%0AQuedo%20atento%20a%20su%20respuesta.%0A%0ASaludos%20cordiales,%0A"
                 target="_blank"

@@ -34,14 +34,14 @@ export default function Navbar() {
 
   return (
     <div className="  border  z-50  shadow-sm  w-full  fixed   bg-white     ">
-      <div className=" from-title bg-gradient-to-b from-2% via-white via-50% to-title to-95%   px-2 sm:px-4 sm:py-2 w-full ">
+      <div className=" from-subtitle bg-gradient-to-b from-2% via-white via-50% to-subtitle to-95%   px-2 sm:px-4 sm:py-2 w-full ">
         <div className=" flex gap-2 sm:gap-5  justify-center items-center  ">
           <div className="text-white font-bold bg-subtitle px-2 py-1 rounded-t-lg">
             ADMISIÓN
           </div>
           <div className="flex items-center gap-2 text-xs sm:text-sm ">
             <p className=" font-semibold sm:font-bold   sm:tracking-widest text-title">
-              50% DE DESCUENTO{" "}
+             Desde  50% al 100%  DE DESCUENTO{" "}
             </p>
             <span className="hidden sm:block text-black   ">
               en inscripción para estudiante nuevos,
@@ -97,7 +97,9 @@ export default function Navbar() {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>Propuesta Educativa</NavigationMenuTrigger>
+                  <NavigationMenuTrigger>
+                    Propuesta Educativa
+                  </NavigationMenuTrigger>
                   <NavigationMenuContent className="w-max px-2 py-4">
                     {/* <Link href="/about"  passHref> */}
                     <NavigationMenuLink
@@ -273,6 +275,12 @@ export default function Navbar() {
                         >
                           Infraestructura
                         </NavigationMenuLink> */}
+                        <NavigationMenuLink
+                          href="/student"
+                          className={navigationMenuTriggerStyle()}
+                        >
+                          Perfil Del Estudiante
+                        </NavigationMenuLink>
                         <NavigationMenuLink
                           href="/teacher"
                           className={navigationMenuTriggerStyle()}

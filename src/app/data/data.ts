@@ -459,35 +459,4 @@ export const achievements = [
   ];
   
 
- export  const councilMembers = [
-    {
-      id: 1,
-      name: "Ana López",
-      position: "Presidenta",
-      imageUrl: "/images/ana-lopez.jpg",
-    },
-    {
-      id: 2,
-      name: "Carlos Gómez",
-      position: "Vicepresidente",
-      imageUrl: "/images/carlos-gomez.jpg",
-    },
-    {
-      id: 3,
-      name: "Lucía Martínez",
-      position: "Secretaria",
-      imageUrl: "/images/lucia-martinez.jpg",
-    },
-    {
-      id: 4,
-      name: "Pedro Ramírez",
-      position: "Tesorero",
-      imageUrl: "/images/pedro-ramirez.jpg",
-    },
-    {
-      id: 5,
-      name: "Sofía Torres",
-      position: "Vocal",
-    },
-  ];
   

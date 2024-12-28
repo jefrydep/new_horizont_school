@@ -1,3 +1,4 @@
+import { profileStudent } from "@/app/data/data-image";
 import { Check } from "lucide-react";
 
 const student = [
@@ -33,7 +34,7 @@ export default function StudentCard({ title }: Props) {
           {/* Imagen */}
           <div className="flex justify-center">
             <img
-              src="/SECUNDARIA.png"
+              src={profileStudent}
               alt="nivel primaria"
               className="h-[23rem] sm:h-[33rem] object-contain"
             />

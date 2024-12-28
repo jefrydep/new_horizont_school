@@ -1,5 +1,5 @@
 import StudentCouncil from "@/components/SchoolCouncil";
-import { councilMembers } from "../data/data";
+import { councilMembers } from "../data/data-image";
 
 export default function page() {
   return (

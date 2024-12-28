@@ -1,3 +1,5 @@
+import { ingresanteUni } from "@/app/data/data-image";
+
 const HighlightStudent = () => {
   return (
     <div className="bg-gradient-to-r from-primary to-white py-8">
@@ -28,7 +30,7 @@ const HighlightStudent = () => {
           {/* Columna Derecha: Imagen */}
           <div className="md:w-auto flex justify-center mt-8 md:mt-0">
             <img
-              src="/ingresante.jpg"
+              src={ingresanteUni}
               alt="Estudiante"
               className="max-w-full h-auto rounded-full border-4 border-primary shadow-lg"
             />

@@ -1,13 +1,7 @@
 "use client";
 
-const imagesGallery = [
-  { id: 1, path: "/matricula-2025.jpg", alt: "Imagen 1" },
-  { id: 2, path: "/matricula-2025-2.jpg", alt: "Imagen 2" },
-  { id: 3, path: "/matricula-2025-3.jpg", alt: "Imagen 3" },
-  { id: 4, path: "/matricula-2025-4.jpg", alt: "Imagen 4" },
-  { id: 5, path: "/matricula-2025-5.jpg", alt: "Imagen 5" },
-  { id: 6, path: "/ingresante.jpg", alt: "Imagen 6" },
-];
+import { imagesGallery } from "@/app/data/data-image";
+
 
 export default function Gallery() {
   return (

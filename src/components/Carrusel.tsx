@@ -1,14 +1,5 @@
 "use client";
-
-const imagesHero = [
-  { id: 1, path: "/matricula-2025.jpg" },
-  { id: 2, path: "/matricula-2025-2.jpg" },
-  { id: 3, path: "/matricula-2025-3.jpg" },
-  { id: 4, path: "/matricula-2025-4.jpg" },
-  { id: 5, path: "/matricula-2025-5.jpg" },
-  { id: 6, path: "/ingresante.jpg" },
-];
-
+import { carruselImages } from "@/app/data/data-image";
 import {
   Carousel,
   CarouselContent,
@@ -34,7 +25,7 @@ export default function Carrusel() {
       className="w-screen   relative overflow-hidden"
     >
       <CarouselContent className="flex">
-        {imagesHero.map((img) => (
+        {carruselImages.map((img) => (
           <CarouselItem
             key={img.id}
             className="flex-[0_0_calc(100%)] sm:flex-[0_0_calc(50%)] lg:flex-[0_0_calc(33.333%)] px-2"
